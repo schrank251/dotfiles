@@ -26,6 +26,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
 
+unsetopt LIST_TYPES
+
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
