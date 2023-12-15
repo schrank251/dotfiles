@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.scrollBeyondLastLine": false,
+    "git.showActionButton": {
+        "commit": false,
+        "publish": false,
+        "sync": false
+    },
+    "workbench.colorCustomizations": {
+        "diffEditor.insertedLineBackground": "#00ff0033",
+        "diffEditor.insertedTextBackground": "#00ff0033",
+        "diffEditor.removedLineBackground": "#ff000033",
+        "diffEditor.removedTextBackground": "#ff000033"
+    },
+    "extensions.ignoreRecommendations": true,
+    "git.suggestSmartCommit": false,
+    "dotfiles.repository": "https://github.com/schrank251/dotfiles.git",
+    "dotfiles.targetPath": "~/.dotfiles",
+    "terminal.integrated.localEchoEnabled": "off"
+}
