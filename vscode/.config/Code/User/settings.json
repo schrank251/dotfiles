@@ -16,5 +16,7 @@
     "git.suggestSmartCommit": false,
     "dotfiles.repository": "https://github.com/schrank251/dotfiles.git",
     "dotfiles.targetPath": "~/.dotfiles",
-    "terminal.integrated.localEchoEnabled": "off"
+    "terminal.integrated.localEchoEnabled": "off",
+    "telemetry.telemetryLevel": "off",
+    "telemetry.enableTelemetry": false
 }
