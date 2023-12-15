@@ -1,0 +1,22 @@
+{
+    "bitbake.generateWorkingFolder": false,
+    "files.watcherExclude": {
+        "**/tmp/**": true,
+        "**/downloads/**": true,
+        "**/sstate-cache/**": true,
+        "**/cache/**": true,
+    },
+    "search.exclude": {
+        "**/tmp/**": true,
+        "**/downloads/**": true,
+        "**/sstate-cache/**": true,
+        "**/cache/**": true,
+    },
+    "C_Cpp.files.exclude": {
+        "**/tmp/**": true,
+        "**/downloads/**": true,
+        "**/sstate-cache/**": true,
+        "**/cache/**": true,
+    },
+    "search.followSymlinks": false,
+}
