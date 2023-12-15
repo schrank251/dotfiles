@@ -1,0 +1,6 @@
+[pager]
+	branch = false
+[pull]
+	ff = only
+[remote "origin"]
+	prune = true
