@@ -19,4 +19,5 @@
         "**/cache/**": true,
     },
     "search.followSymlinks": false,
+    "git.ignoreLimitWarning": true
 }
