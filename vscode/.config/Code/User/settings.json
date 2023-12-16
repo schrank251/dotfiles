@@ -18,5 +18,11 @@
     "dotfiles.targetPath": "~/.dotfiles",
     "terminal.integrated.localEchoEnabled": "off",
     "telemetry.telemetryLevel": "off",
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "cSpell.enabledLanguageIds": [
+        "git-commit",
+        "markdown",
+        "restructuredtext",
+        "scminput"
+    ]
 }
