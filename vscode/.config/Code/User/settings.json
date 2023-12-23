@@ -44,5 +44,6 @@
             "installOhMyZshConfig": false,
             "upgradePackages": false
         }
-    }
+    },
+    "dev.containers.gitCredentialHelperConfigLocation": "none"
 }
