@@ -28,10 +28,3 @@ RUN useradd -ms /bin/bash florian && \
 
 # Switch to the 'florian' user
 USER florian
-
-# Install Oh My Zsh and Powerlevel10k theme
-RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
-    git clone --depth 1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
-
-# Change the default shell to Zsh for the 'florian' user
-RUN sudo chsh -s $(which zsh) florian

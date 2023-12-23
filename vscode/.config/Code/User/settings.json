@@ -28,4 +28,20 @@
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
+    "dev.containers.defaultExtensionsIfInstalledLocally": [
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-docker",
+        "streetsidesoftware.code-spell-checker",
+        "redhat.vscode-yaml",
+        "eriklynd.json-tools"
+    ],
+    "dev.containers.defaultFeatures": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": true,
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": true,
+            "installOhMyZshConfig": false,
+            "upgradePackages": false
+        }
+    }
 }
