@@ -35,6 +35,7 @@
         "redhat.vscode-yaml",
         "eriklynd.json-tools"
     ],
+    "files.insertFinalNewline": true,
     "dev.containers.defaultFeatures": {
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": true,
