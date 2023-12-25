@@ -1,23 +1,37 @@
 {
     "bitbake.generateWorkingFolder": false,
+    "search.followSymlinks": false,
+    "git.ignoreLimitWarning": true,
     "files.watcherExclude": {
-        "**/tmp/**": true,
+        "**/.git/**": true,
+        "**/cache/**": true,
+        "**/tmp*/**": true,
         "**/downloads/**": true,
         "**/sstate-cache/**": true,
-        "**/cache/**": true,
+        "**/workspace/sources/**": true
     },
     "search.exclude": {
-        "**/tmp/**": true,
+        "**/.git/**": true,
+        "**/cache/**": true,
+        "**/tmp*/**": true,
         "**/downloads/**": true,
         "**/sstate-cache/**": true,
-        "**/cache/**": true,
+        "**/workspace/sources/**": true
     },
     "C_Cpp.files.exclude": {
-        "**/tmp/**": true,
+        "**/.git/**": true,
+        "**/cache/**": true,
+        "**/tmp*/**": true,
         "**/downloads/**": true,
         "**/sstate-cache/**": true,
-        "**/cache/**": true,
+        "**/workspace/sources/**": true
     },
-    "search.followSymlinks": false,
-    "git.ignoreLimitWarning": true
+    "python.analysis.exclude": [
+        "**/.git/**",
+        "**/cache/**",
+        "**/tmp*/**",
+        "**/downloads/**",
+        "**/sstate-cache/**",
+        "**/workspace/sources/**"
+    ]
 }
