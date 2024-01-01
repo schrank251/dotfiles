@@ -1,3 +1,5 @@
+[user]
+	name = Florian Schrank
 [fetch]
 	prune = true
 [pager]
