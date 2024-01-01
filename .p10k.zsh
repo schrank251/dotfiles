@@ -44,15 +44,15 @@
     status                  # exit code of the last command
     command_execution_time  # duration of the last command
     background_jobs         # presence of background jobs
-    direnv                  # direnv status (https://direnv.net/)
-    asdf                    # asdf version manager (https://github.com/asdf-vm/asdf)
-    virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
-    anaconda                # conda environment (https://conda.io/)
-    pyenv                   # python environment (https://github.com/pyenv/pyenv)
-    goenv                   # go environment (https://github.com/syndbg/goenv)
-    nodenv                  # node.js version from nodenv (https://github.com/nodenv/nodenv)
-    nvm                     # node.js version from nvm (https://github.com/nvm-sh/nvm)
-    nodeenv                 # node.js environment (https://github.com/ekalinin/nodeenv)
+    # direnv                # direnv status (https://direnv.net/)
+    # asdf                  # asdf version manager (https://github.com/asdf-vm/asdf)
+    # virtualenv            # python virtual environment (https://docs.python.org/3/library/venv.html)
+    # anaconda              # conda environment (https://conda.io/)
+    # pyenv                 # python environment (https://github.com/pyenv/pyenv)
+    # goenv                 # go environment (https://github.com/syndbg/goenv)
+    # nodenv                # node.js version from nodenv (https://github.com/nodenv/nodenv)
+    # nvm                   # node.js version from nvm (https://github.com/nvm-sh/nvm)
+    # nodeenv               # node.js environment (https://github.com/ekalinin/nodeenv)
     # node_version          # node.js version
     # go_version            # go version (https://golang.org)
     # rust_version          # rustc version (https://www.rust-lang.org)
@@ -61,45 +61,45 @@
     # laravel_version       # laravel php framework version (https://laravel.com/)
     # java_version          # java version (https://www.java.com/)
     # package               # name@version from package.json (https://docs.npmjs.com/files/package.json)
-    rbenv                   # ruby version from rbenv (https://github.com/rbenv/rbenv)
-    rvm                     # ruby version from rvm (https://rvm.io)
-    fvm                     # flutter version management (https://github.com/leoafarias/fvm)
-    luaenv                  # lua version from luaenv (https://github.com/cehoffman/luaenv)
-    jenv                    # java version from jenv (https://github.com/jenv/jenv)
-    plenv                   # perl version from plenv (https://github.com/tokuhirom/plenv)
-    perlbrew                # perl version from perlbrew (https://github.com/gugod/App-perlbrew)
-    phpenv                  # php version from phpenv (https://github.com/phpenv/phpenv)
-    scalaenv                # scala version from scalaenv (https://github.com/scalaenv/scalaenv)
-    haskell_stack           # haskell version from stack (https://haskellstack.org/)
-    kubecontext             # current kubernetes context (https://kubernetes.io/)
-    terraform               # terraform workspace (https://www.terraform.io)
+    # rbenv                 # ruby version from rbenv (https://github.com/rbenv/rbenv)
+    # rvm                   # ruby version from rvm (https://rvm.io)
+    # fvm                   # flutter version management (https://github.com/leoafarias/fvm)
+    # luaenv                # lua version from luaenv (https://github.com/cehoffman/luaenv)
+    # jenv                  # java version from jenv (https://github.com/jenv/jenv)
+    # plenv                 # perl version from plenv (https://github.com/tokuhirom/plenv)
+    # perlbrew              # perl version from perlbrew (https://github.com/gugod/App-perlbrew)
+    # phpenv                # php version from phpenv (https://github.com/phpenv/phpenv)
+    # scalaenv              # scala version from scalaenv (https://github.com/scalaenv/scalaenv)
+    # haskell_stack         # haskell version from stack (https://haskellstack.org/)
+    # kubecontext           # current kubernetes context (https://kubernetes.io/)
+    # terraform             # terraform workspace (https://www.terraform.io)
     # terraform_version     # terraform version (https://www.terraform.io)
-    aws                     # aws profile (https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
-    aws_eb_env              # aws elastic beanstalk environment (https://aws.amazon.com/elasticbeanstalk/)
-    azure                   # azure account name (https://docs.microsoft.com/en-us/cli/azure)
-    gcloud                  # google cloud cli account and project (https://cloud.google.com/)
-    google_app_cred         # google application credentials (https://cloud.google.com/docs/authentication/production)
-    toolbox                 # toolbox name (https://github.com/containers/toolbox)
+    # aws                   # aws profile (https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
+    # aws_eb_env            # aws elastic beanstalk environment (https://aws.amazon.com/elasticbeanstalk/)
+    # azure                 # azure account name (https://docs.microsoft.com/en-us/cli/azure)
+    # gcloud                # google cloud cli account and project (https://cloud.google.com/)
+    # google_app_cred       # google application credentials (https://cloud.google.com/docs/authentication/production)
+    # toolbox               # toolbox name (https://github.com/containers/toolbox)
     context                 # user@hostname
-    nordvpn                 # nordvpn connection status, linux only (https://nordvpn.com/)
-    ranger                  # ranger shell (https://github.com/ranger/ranger)
-    yazi                    # yazi shell (https://github.com/sxyazi/yazi)
-    nnn                     # nnn shell (https://github.com/jarun/nnn)
-    lf                      # lf shell (https://github.com/gokcehan/lf)
-    xplr                    # xplr shell (https://github.com/sayanarijit/xplr)
+    # nordvpn               # nordvpn connection status, linux only (https://nordvpn.com/)
+    # ranger                # ranger shell (https://github.com/ranger/ranger)
+    # yazi                  # yazi shell (https://github.com/sxyazi/yazi)
+    # nnn                   # nnn shell (https://github.com/jarun/nnn)
+    # lf                    # lf shell (https://github.com/gokcehan/lf)
+    # xplr                  # xplr shell (https://github.com/sayanarijit/xplr)
     vim_shell               # vim shell indicator (:sh)
-    midnight_commander      # midnight commander shell (https://midnight-commander.org/)
-    nix_shell               # nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html)
-    chezmoi_shell           # chezmoi shell (https://www.chezmoi.io/)
+    # midnight_commander    # midnight commander shell (https://midnight-commander.org/)
+    # nix_shell             # nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html)
+    # chezmoi_shell         # chezmoi shell (https://www.chezmoi.io/)
     # vpn_ip                # virtual private network indicator
     # load                  # CPU load
     # disk_usage            # disk usage
     # ram                   # free RAM
     # swap                  # used swap
-    todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
-    timewarrior             # timewarrior tracking status (https://timewarrior.net/)
-    taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
-    per_directory_history   # Oh My Zsh per-directory-history local/global indicator
+    # todo                  # todo items (https://github.com/todotxt/todo.txt-cli)
+    # timewarrior           # timewarrior tracking status (https://timewarrior.net/)
+    # taskwarrior           # taskwarrior task count (https://taskwarrior.org/)
+    # per_directory_history # Oh My Zsh per-directory-history local/global indicator
     # cpu_arch              # CPU architecture
     # time                  # current time
     # ip                    # ip address and bandwidth usage for a specified network interface
@@ -184,7 +184,7 @@
   # OS identifier color.
   typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=
   # Custom icon.
-  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='⭐'
+  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='%B⭐'
 
   ################################[ prompt_char: prompt symbol ]################################
   # Green prompt symbol if the last command succeeded.
@@ -192,13 +192,13 @@
   # Red prompt symbol if the last command failed.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=1
   # Default prompt symbol.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='>'
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='%B>'
   # Prompt symbol in command vi mode.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VICMD_CONTENT_EXPANSION='<'
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VICMD_CONTENT_EXPANSION='%B<'
   # Prompt symbol in visual vi mode.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIVIS_CONTENT_EXPANSION='V'
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIVIS_CONTENT_EXPANSION='%BV'
   # Prompt symbol in overwrite vi mode.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIOWR_CONTENT_EXPANSION='^'
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIOWR_CONTENT_EXPANSION='%B^'
   typeset -g POWERLEVEL9K_PROMPT_CHAR_OVERWRITE_STATE=true
   # No line terminator if prompt_char is the last segment.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=''
@@ -340,6 +340,10 @@
   # Custom prefix.
   # typeset -g POWERLEVEL9K_DIR_PREFIX='%fin '
 
+  unset POWERLEVEL9K_DIR_ANCHOR_FOREGROUND
+  unset POWERLEVEL9K_DIR_SHORTENED_FOREGROUND
+  typeset -g POWERLEVEL9K_DIR_CONTENT_EXPANSION='%B${P9K_CONTENT}'
+
   #####################################[ vcs: git status ]######################################
   # Branch icon. Set this parameter to '\UE0A0 ' for the popular Powerline branch icon.
   typeset -g POWERLEVEL9K_VCS_BRANCH_ICON=
@@ -479,8 +483,8 @@
   # Disable the default Git status formatting.
   typeset -g POWERLEVEL9K_VCS_DISABLE_GITSTATUS_FORMATTING=true
   # Install our own Git status formatter.
-  typeset -g POWERLEVEL9K_VCS_CONTENT_EXPANSION='${$((my_git_formatter(1)))+${my_git_format}}'
-  typeset -g POWERLEVEL9K_VCS_LOADING_CONTENT_EXPANSION='${$((my_git_formatter(0)))+${my_git_format}}'
+  typeset -g POWERLEVEL9K_VCS_CONTENT_EXPANSION='%B${$((my_git_formatter(1)))+${my_git_format}}'
+  typeset -g POWERLEVEL9K_VCS_LOADING_CONTENT_EXPANSION='%B${$((my_git_formatter(0)))+${my_git_format}}'
   # Enable counters for staged, unstaged, etc.
   typeset -g POWERLEVEL9K_VCS_{STAGED,UNSTAGED,UNTRACKED,CONFLICTED,COMMITS_AHEAD,COMMITS_BEHIND}_MAX_NUM=-1
 
@@ -539,6 +543,8 @@
   typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_FOREGROUND=1
   typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_VISUAL_IDENTIFIER_EXPANSION='err'
 
+  typeset -g POWERLEVEL9K_STATUS_CONTENT_EXPANSION='%B${P9K_CONTENT}'
+
   ###################[ command_execution_time: duration of the last command ]###################
   # Show duration of the last command if takes at least this many seconds.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=3
@@ -552,6 +558,7 @@
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_VISUAL_IDENTIFIER_EXPANSION=
   # Custom prefix.
   # typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PREFIX='%ftook '
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_CONTENT_EXPANSION='%B${P9K_CONTENT}'
 
   #######################[ background_jobs: presence of background jobs ]#######################
   # Don't show the number of background jobs.
@@ -560,6 +567,7 @@
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND=1
   # Custom icon.
   # typeset -g POWERLEVEL9K_BACKGROUND_JOBS_VISUAL_IDENTIFIER_EXPANSION='⭐'
+  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_CONTENT_EXPANSION='%B${P9K_CONTENT}'
 
   #######################[ direnv: direnv status (https://direnv.net/) ]########################
   # Direnv color.
@@ -721,7 +729,7 @@
   typeset -g POWERLEVEL9K_RANGER_FOREGROUND=3
   # Custom icon.
   # typeset -g POWERLEVEL9K_RANGER_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  
+
   ####################[ yazi: yazi shell (https://github.com/sxyazi/yazi) ]#####################
   # Yazi shell color.
   typeset -g POWERLEVEL9K_YAZI_FOREGROUND=3
@@ -833,7 +841,7 @@
   #
   # Here 24 is P9K_TODO_FILTERED_TASK_COUNT and 42 is P9K_TODO_TOTAL_TASK_COUNT.
   #
-  # typeset -g POWERLEVEL9K_TODO_CONTENT_EXPANSION='$P9K_TODO_FILTERED_TASK_COUNT'
+  # typeset -g POWERLEVEL9K_TODO_CONTENT_EXPANSION='%B$P9K_TODO_FILTERED_TASK_COUNT'
 
   # Custom icon.
   # typeset -g POWERLEVEL9K_TODO_VISUAL_IDENTIFIER_EXPANSION='⭐'
@@ -845,7 +853,7 @@
   # Tip: To always display tasks without truncation, delete the following parameter.
   # Tip: To hide task names and display just the icon when time tracking is enabled, set the
   # value of the following parameter to "".
-  typeset -g POWERLEVEL9K_TIMEWARRIOR_CONTENT_EXPANSION='${P9K_CONTENT:0:24}${${P9K_CONTENT:24}:+..}'
+  typeset -g POWERLEVEL9K_TIMEWARRIOR_CONTENT_EXPANSION='%B${P9K_CONTENT:0:24}${${P9K_CONTENT:24}:+..}'
 
   # Custom icon.
   # typeset -g POWERLEVEL9K_TIMEWARRIOR_VISUAL_IDENTIFIER_EXPANSION='⭐'
@@ -865,7 +873,7 @@
   #
   #   '${P9K_TASKWARRIOR_OVERDUE_COUNT:+"!$P9K_TASKWARRIOR_OVERDUE_COUNT/"}$P9K_TASKWARRIOR_PENDING_COUNT'
   #
-  # typeset -g POWERLEVEL9K_TASKWARRIOR_CONTENT_EXPANSION='$P9K_TASKWARRIOR_PENDING_COUNT'
+  # typeset -g POWERLEVEL9K_TASKWARRIOR_CONTENT_EXPANSION='%B$P9K_TASKWARRIOR_PENDING_COUNT'
 
   # Custom icon.
   # typeset -g POWERLEVEL9K_TASKWARRIOR_VISUAL_IDENTIFIER_EXPANSION='⭐'
@@ -959,7 +967,7 @@
   # The default value of POWERLEVEL9K_ANACONDA_CONTENT_EXPANSION expands to $CONDA_PROMPT_MODIFIER
   # without the surrounding parentheses, or to the last path component of CONDA_PREFIX if the former
   # is empty.
-  typeset -g POWERLEVEL9K_ANACONDA_CONTENT_EXPANSION='${${${${CONDA_PROMPT_MODIFIER#\(}% }%\)}:-${CONDA_PREFIX:t}}'
+  typeset -g POWERLEVEL9K_ANACONDA_CONTENT_EXPANSION='%B${${${${CONDA_PROMPT_MODIFIER#\(}% }%\)}:-${CONDA_PREFIX:t}}'
 
   # Custom icon.
   # typeset -g POWERLEVEL9K_ANACONDA_VISUAL_IDENTIFIER_EXPANSION='⭐'
@@ -985,7 +993,7 @@
   # 1. Display just "$P9K_CONTENT" if it's equal to "$P9K_PYENV_PYTHON_VERSION" or
   #    starts with "$P9K_PYENV_PYTHON_VERSION/".
   # 2. Otherwise display "$P9K_CONTENT $P9K_PYENV_PYTHON_VERSION".
-  typeset -g POWERLEVEL9K_PYENV_CONTENT_EXPANSION='${P9K_CONTENT}${${P9K_CONTENT:#$P9K_PYENV_PYTHON_VERSION(|/*)}:+ $P9K_PYENV_PYTHON_VERSION}'
+  typeset -g POWERLEVEL9K_PYENV_CONTENT_EXPANSION='%B${P9K_CONTENT}${${P9K_CONTENT:#$P9K_PYENV_PYTHON_VERSION(|/*)}:+ $P9K_PYENV_PYTHON_VERSION}'
 
   # Custom icon.
   # typeset -g POWERLEVEL9K_PYENV_VISUAL_IDENTIFIER_EXPANSION='⭐'
@@ -1101,7 +1109,7 @@
   # - P9K_PACKAGE_NAME     The value of `name` field in package.json.
   # - P9K_PACKAGE_VERSION  The value of `version` field in package.json.
   #
-  # typeset -g POWERLEVEL9K_PACKAGE_CONTENT_EXPANSION='${P9K_PACKAGE_NAME//\%/%%}@${P9K_PACKAGE_VERSION//\%/%%}'
+  # typeset -g POWERLEVEL9K_PACKAGE_CONTENT_EXPANSION='%B${P9K_PACKAGE_NAME//\%/%%}@${P9K_PACKAGE_VERSION//\%/%%}'
   # Custom icon.
   # typeset -g POWERLEVEL9K_PACKAGE_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -1253,7 +1261,7 @@
   #
   #   typeset -g POWERLEVEL9K_KUBECONTEXT_TEST_FOREGROUND=3
   #   typeset -g POWERLEVEL9K_KUBECONTEXT_TEST_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  #   typeset -g POWERLEVEL9K_KUBECONTEXT_TEST_CONTENT_EXPANSION='> ${P9K_CONTENT} <'
+  #   typeset -g POWERLEVEL9K_KUBECONTEXT_TEST_CONTENT_EXPANSION='%B> ${P9K_CONTENT} <'
   typeset -g POWERLEVEL9K_KUBECONTEXT_CLASSES=(
       # '*prod*'  PROD    # These values are examples that are unlikely
       # '*test*'  TEST    # to match your needs. Customize them as needed.
@@ -1335,7 +1343,7 @@
   #
   #   typeset -g POWERLEVEL9K_TERRAFORM_TEST_FOREGROUND=2
   #   typeset -g POWERLEVEL9K_TERRAFORM_TEST_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  #   typeset -g POWERLEVEL9K_TERRAFORM_TEST_CONTENT_EXPANSION='> ${P9K_CONTENT} <'
+  #   typeset -g POWERLEVEL9K_TERRAFORM_TEST_CONTENT_EXPANSION='%B> ${P9K_CONTENT} <'
   typeset -g POWERLEVEL9K_TERRAFORM_CLASSES=(
       # '*prod*'  PROD    # These values are examples that are unlikely
       # '*test*'  TEST    # to match your needs. Customize them as needed.
@@ -1376,7 +1384,7 @@
   #
   #   typeset -g POWERLEVEL9K_AWS_TEST_FOREGROUND=2
   #   typeset -g POWERLEVEL9K_AWS_TEST_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  #   typeset -g POWERLEVEL9K_AWS_TEST_CONTENT_EXPANSION='> ${P9K_CONTENT} <'
+  #   typeset -g POWERLEVEL9K_AWS_TEST_CONTENT_EXPANSION='%B> ${P9K_CONTENT} <'
   typeset -g POWERLEVEL9K_AWS_CLASSES=(
       # '*prod*'  PROD    # These values are examples that are unlikely
       # '*test*'  TEST    # to match your needs. Customize them as needed.
@@ -1388,7 +1396,7 @@
   #
   # - P9K_AWS_PROFILE  The name of the current AWS profile.
   # - P9K_AWS_REGION   The region associated with the current AWS profile.
-  typeset -g POWERLEVEL9K_AWS_CONTENT_EXPANSION='${P9K_AWS_PROFILE//\%/%%}${P9K_AWS_REGION:+ ${P9K_AWS_REGION//\%/%%}}'
+  typeset -g POWERLEVEL9K_AWS_CONTENT_EXPANSION='%B${P9K_AWS_PROFILE//\%/%%}${P9K_AWS_REGION:+ ${P9K_AWS_REGION//\%/%%}}'
 
   #[ aws_eb_env: aws elastic beanstalk environment (https://aws.amazon.com/elasticbeanstalk/) ]#
   # AWS Elastic Beanstalk environment color.
@@ -1464,8 +1472,8 @@
   # and COMPLETE. You can also hide gcloud in state PARTIAL by setting
   # POWERLEVEL9K_GCLOUD_PARTIAL_VISUAL_IDENTIFIER_EXPANSION and
   # POWERLEVEL9K_GCLOUD_PARTIAL_CONTENT_EXPANSION to empty.
-  typeset -g POWERLEVEL9K_GCLOUD_PARTIAL_CONTENT_EXPANSION='${P9K_GCLOUD_PROJECT_ID//\%/%%}'
-  typeset -g POWERLEVEL9K_GCLOUD_COMPLETE_CONTENT_EXPANSION='${P9K_GCLOUD_PROJECT_NAME//\%/%%}'
+  typeset -g POWERLEVEL9K_GCLOUD_PARTIAL_CONTENT_EXPANSION='%B${P9K_GCLOUD_PROJECT_ID//\%/%%}'
+  typeset -g POWERLEVEL9K_GCLOUD_COMPLETE_CONTENT_EXPANSION='%B${P9K_GCLOUD_PROJECT_NAME//\%/%%}'
 
   # Send a request to Google (by means of `gcloud projects describe ...`) to obtain project name
   # this often. Negative value disables periodic polling. In this mode project name is retrieved
@@ -1505,7 +1513,7 @@
   #
   #   typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_TEST_FOREGROUND=3
   #   typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_TEST_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  #   typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_TEST_CONTENT_EXPANSION='$P9K_GOOGLE_APP_CRED_PROJECT_ID'
+  #   typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_TEST_CONTENT_EXPANSION='%B$P9K_GOOGLE_APP_CRED_PROJECT_ID'
   typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_CLASSES=(
       # '*:*prod*:*'  PROD    # These values are examples that are unlikely
       # '*:*test*:*'  TEST    # to match your needs. Customize them as needed.
@@ -1527,13 +1535,13 @@
   #   P9K_GOOGLE_APP_CRED_CLIENT_EMAIL | client_email
   #
   # Note: ${VARIABLE//\%/%%} expands to ${VARIABLE} with all occurrences of '%' replaced by '%%'.
-  typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_DEFAULT_CONTENT_EXPANSION='${P9K_GOOGLE_APP_CRED_PROJECT_ID//\%/%%}'
+  typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_DEFAULT_CONTENT_EXPANSION='%B${P9K_GOOGLE_APP_CRED_PROJECT_ID//\%/%%}'
 
   ##############[ toolbox: toolbox name (https://github.com/containers/toolbox) ]###############
   # Toolbox color.
   typeset -g POWERLEVEL9K_TOOLBOX_FOREGROUND=3
   # Don't display the name of the toolbox if it matches fedora-toolbox-*.
-  typeset -g POWERLEVEL9K_TOOLBOX_CONTENT_EXPANSION='${P9K_TOOLBOX_NAME:#fedora-toolbox-*}'
+  typeset -g POWERLEVEL9K_TOOLBOX_CONTENT_EXPANSION='%B${P9K_TOOLBOX_NAME:#fedora-toolbox-*}'
   # Custom icon.
   # typeset -g POWERLEVEL9K_TOOLBOX_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Custom prefix.
@@ -1576,7 +1584,7 @@
   #   P9K_IP_TX_BYTES_DELTA | number of bytes sent since last prompt
   #   P9K_IP_RX_RATE        | receive rate (since last prompt)
   #   P9K_IP_TX_RATE        | send rate (since last prompt)
-  typeset -g POWERLEVEL9K_IP_CONTENT_EXPANSION='$P9K_IP_IP${P9K_IP_RX_RATE:+ %2F<$P9K_IP_RX_RATE}${P9K_IP_TX_RATE:+ %3F>$P9K_IP_TX_RATE}'
+  typeset -g POWERLEVEL9K_IP_CONTENT_EXPANSION='%B$P9K_IP_IP${P9K_IP_RX_RATE:+ %2F<$P9K_IP_RX_RATE}${P9K_IP_TX_RATE:+ %3F>$P9K_IP_TX_RATE}'
   # Show information for the first network interface whose name matches this regular expression.
   # Run `ifconfig` or `ip -4 a show` to see the names of all network interfaces.
   typeset -g POWERLEVEL9K_IP_INTERFACE='[ew].*'
@@ -1614,7 +1622,7 @@
   #   typeset -g my_wifi_fg=(4 4 4 4 4)                                # <-- change these values
   #   typeset -g my_wifi_icon=('WiFi' 'WiFi' 'WiFi' 'WiFi' 'WiFi')     # <-- change these values
   #
-  #   typeset -g POWERLEVEL9K_WIFI_CONTENT_EXPANSION='%F{${my_wifi_fg[P9K_WIFI_BARS+1]}}$P9K_WIFI_LAST_TX_RATE Mbps'
+  #   typeset -g POWERLEVEL9K_WIFI_CONTENT_EXPANSION='%B%F{${my_wifi_fg[P9K_WIFI_BARS+1]}}$P9K_WIFI_LAST_TX_RATE Mbps'
   #   typeset -g POWERLEVEL9K_WIFI_VISUAL_IDENTIFIER_EXPANSION='%F{${my_wifi_fg[P9K_WIFI_BARS+1]}}${my_wifi_icon[P9K_WIFI_BARS+1]}'
   #
   # The following parameters are accessible within the expansions:
