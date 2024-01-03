@@ -43,6 +43,9 @@
             "installOhMyZsh": true,
             "installOhMyZshConfig": false,
             "upgradePackages": false
+        },
+        "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+            "omzPlugins": "https://github.com/romkatv/powerlevel10k.git"
         }
     },
     "dev.containers.gitCredentialHelperConfigLocation": "none"
