@@ -566,11 +566,12 @@
 
   #######################[ background_jobs: presence of background jobs ]#######################
   # Don't show the number of background jobs.
-  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=false
+  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=true
   # Background jobs color.
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND=1
   # Custom icon.
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_VISUAL_IDENTIFIER_EXPANSION='%B%%'
+  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_CONTENT_EXPANSION='%B${P9K_CONTENT}'
 
   #######################[ direnv: direnv status (https://direnv.net/) ]########################
   # Direnv color.
