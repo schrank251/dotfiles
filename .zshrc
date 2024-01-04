@@ -111,5 +111,11 @@ source $ZSH/oh-my-zsh.sh
 
 unsetopt AUTO_CD
 
+if [ -d /dc/shellhistory/ ]; then
+  export HISTFILE=/dc/shellhistory/.zsh_history
+  export PROMPT_COMMAND='history -a'
+  sudo chown -R $(whoami) /dc/shellhistory/
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
