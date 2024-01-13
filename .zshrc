@@ -109,6 +109,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias ..='cd ..'
+alias ../..='cd ../..'
+alias ../../..='cd ../../..'
+alias ../../../..='cd ../../../..'
+alias ../../../../..='cd ../../../../..'
+
 unsetopt AUTO_CD
 
 if [ -d /dc/shellhistory/ ]; then
