@@ -1,5 +1,4 @@
 {
-    "bitbake.generateWorkingFolder": false,
     "search.followSymlinks": false,
     "git.ignoreLimitWarning": true,
     "files.watcherExclude": {
@@ -8,7 +7,9 @@
         "**/tmp*/**": true,
         "**/downloads/**": true,
         "**/sstate-cache/**": true,
-        "**/workspace/sources/**": true
+        "**/vscode-bitbake-build/**": true,
+        "**/workspace/sources/**": true,
+        "**/workspace/attic/**": true
     },
     "search.exclude": {
         "**/.git/**": true,
@@ -16,15 +17,20 @@
         "**/tmp*/**": true,
         "**/downloads/**": true,
         "**/sstate-cache/**": true,
-        "**/workspace/sources/**": true
+        "**/vscode-bitbake-build/**": true,
+        "**/workspace/sources/**": true,
+        "**/workspace/attic/**": true
     },
+    "search.useIgnoreFiles": false,
     "C_Cpp.files.exclude": {
         "**/.git/**": true,
         "**/cache/**": true,
         "**/tmp*/**": true,
         "**/downloads/**": true,
         "**/sstate-cache/**": true,
-        "**/workspace/sources/**": true
+        "**/vscode-bitbake-build/**": true,
+        "**/workspace/sources/**": true,
+        "**/workspace/attic/**": true
     },
     "python.analysis.exclude": [
         "**/.git/**",
@@ -32,6 +38,8 @@
         "**/tmp*/**",
         "**/downloads/**",
         "**/sstate-cache/**",
-        "**/workspace/sources/**"
-    ]
+        "**/vscode-bitbake-build/**",
+        "**/workspace/sources/**",
+        "**/workspace/attic/**"
+    ],
 }
