@@ -1,45 +1,45 @@
 {
-    "search.followSymlinks": false,
-    "git.ignoreLimitWarning": true,
-    "files.watcherExclude": {
-        "**/.git/**": true,
-        "**/cache/**": true,
-        "**/tmp*/**": true,
-        "**/downloads/**": true,
-        "**/sstate-cache/**": true,
-        "**/vscode-bitbake-build/**": true,
-        "**/workspace/sources/**": true,
-        "**/workspace/attic/**": true
-    },
-    "search.exclude": {
-        "**/.git/**": true,
-        "**/cache/**": true,
-        "**/tmp*/**": true,
-        "**/downloads/**": true,
-        "**/sstate-cache/**": true,
-        "**/vscode-bitbake-build/**": true,
-        "**/workspace/sources/**": true,
-        "**/workspace/attic/**": true
-    },
-    "search.useIgnoreFiles": false,
     "C_Cpp.files.exclude": {
         "**/.git/**": true,
         "**/cache/**": true,
-        "**/tmp*/**": true,
         "**/downloads/**": true,
         "**/sstate-cache/**": true,
+        "**/tmp*/**": true,
         "**/vscode-bitbake-build/**": true,
-        "**/workspace/sources/**": true,
-        "**/workspace/attic/**": true
+        "**/workspace/attic/**": true,
+        "**/workspace/sources/**": true
     },
+    "files.watcherExclude": {
+        "**/.git/**": true,
+        "**/cache/**": true,
+        "**/downloads/**": true,
+        "**/sstate-cache/**": true,
+        "**/tmp*/**": true,
+        "**/vscode-bitbake-build/**": true,
+        "**/workspace/attic/**": true,
+        "**/workspace/sources/**": true
+    },
+    "git.ignoreLimitWarning": true,
     "python.analysis.exclude": [
         "**/.git/**",
         "**/cache/**",
-        "**/tmp*/**",
         "**/downloads/**",
         "**/sstate-cache/**",
+        "**/tmp*/**",
         "**/vscode-bitbake-build/**",
-        "**/workspace/sources/**",
-        "**/workspace/attic/**"
+        "**/workspace/attic/**",
+        "**/workspace/sources/**"
     ],
+    "search.exclude": {
+        "**/.git/**": true,
+        "**/cache/**": true,
+        "**/downloads/**": true,
+        "**/sstate-cache/**": true,
+        "**/tmp*/**": true,
+        "**/vscode-bitbake-build/**": true,
+        "**/workspace/attic/**": true,
+        "**/workspace/sources/**": true
+    },
+    "search.followSymlinks": false,
+    "search.useIgnoreFiles": false
 }
