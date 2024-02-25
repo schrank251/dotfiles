@@ -1,65 +1,65 @@
 {
-    "workbench.colorTheme": "One Dark Pro",
-    "editor.scrollBeyondLastLine": false,
-    "cSpell.language": "en,de-DE",
-    "redhat.telemetry.enabled": false,
-    "terminal.integrated.scrollback": 10000,
-    "git.showActionButton": {
-        "commit": false,
-        "publish": false,
-        "sync": false
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
     },
-    "workbench.colorCustomizations": {
-        "diffEditor.insertedLineBackground": "#00ff0033",
-        "diffEditor.insertedTextBackground": "#00ff0033",
-        "diffEditor.removedLineBackground": "#ff000033",
-        "diffEditor.removedTextBackground": "#ff000033"
-    },
-    "git.alwaysSignOff": true,
-    "extensions.ignoreRecommendations": true,
-    "git.suggestSmartCommit": false,
-    "dotfiles.repository": "https://github.com/schrank251/dotfiles.git",
-    "dotfiles.targetPath": "~/.dotfiles",
-    "terminal.integrated.localEchoEnabled": "off",
-    "telemetry.telemetryLevel": "off",
     "cSpell.enabledLanguageIds": [
         "git-commit",
         "markdown",
         "restructuredtext",
         "scminput"
     ],
-    "files.trimTrailingWhitespace": true,
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false
-    },
+    "cSpell.language": "en,de-DE",
     "dev.containers.defaultExtensionsIfInstalledLocally": [
+        "eriklynd.json-tools",
         "mhutchie.git-graph",
         "ms-azuretools.vscode-docker",
-        "streetsidesoftware.code-spell-checker",
         "redhat.vscode-yaml",
-        "eriklynd.json-tools"
+        "streetsidesoftware.code-spell-checker"
     ],
-    "files.insertFinalNewline": true,
     "dev.containers.defaultFeatures": {
+        "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+            "omzPlugins": "https://github.com/romkatv/powerlevel10k.git"
+        },
         "ghcr.io/devcontainers/features/common-utils:2": {
-            "installZsh": true,
             "configureZshAsDefaultShell": true,
             "installOhMyZsh": true,
             "installOhMyZshConfig": false,
+            "installZsh": true,
             "upgradePackages": false
-        },
-        "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
-            "omzPlugins": "https://github.com/romkatv/powerlevel10k.git"
         },
         "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
     },
     "dev.containers.gitCredentialHelperConfigLocation": "none",
-    "search.useIgnoreFiles": false,
+    "dotfiles.repository": "https://github.com/schrank251/dotfiles.git",
+    "dotfiles.targetPath": "~/.dotfiles",
+    "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": true,
+    "editor.scrollBeyondLastLine": false,
+    "extensions.ignoreRecommendations": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "git.alwaysSignOff": true,
     "git.inputValidation": "warn",
     "git.inputValidationSubjectLength": 72,
-    "terminal.integrated.showExitAlert": false,
+    "git.showActionButton": {
+        "commit": false,
+        "publish": false,
+        "sync": false
+    },
+    "git.suggestSmartCommit": false,
+    "redhat.telemetry.enabled": false,
+    "search.useIgnoreFiles": false,
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.localEchoEnabled": "off",
     "terminal.integrated.persistentSessionReviveProcess": "never",
-    "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": true,
-    "workbench.list.horizontalScrolling": true,
-    "terminal.integrated.allowChords": false
+    "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.showExitAlert": false,
+    "workbench.colorCustomizations": {
+        "diffEditor.insertedLineBackground": "#00ff0033",
+        "diffEditor.insertedTextBackground": "#00ff0033",
+        "diffEditor.removedLineBackground": "#ff000033",
+        "diffEditor.removedTextBackground": "#ff000033"
+    },
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.list.horizontalScrolling": true
 }
