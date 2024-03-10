@@ -26,5 +26,14 @@
     {
         "key": "ctrl+4",
         "command": "-workbench.action.focusFourthEditorGroup"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "workbench.action.terminal.focus",
+    },
+    {
+        "key": "ctrl+up",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
     }
 ]
