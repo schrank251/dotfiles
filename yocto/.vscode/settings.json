@@ -10,7 +10,6 @@
         "**/workspace/sources/**": true
     },
     "files.watcherExclude": {
-        "**/.git/**": true,
         "**/cache/**": true,
         "**/downloads/**": true,
         "**/sstate-cache/**": true,
@@ -31,15 +30,23 @@
         "**/workspace/sources/**"
     ],
     "search.exclude": {
-        "**/.git/**": true,
         "**/cache/**": true,
         "**/downloads/**": true,
         "**/sstate-cache/**": true,
         "**/tmp*/**": true,
         "**/vscode-bitbake-build/**": true,
-        "**/workspace/attic/**": true,
-        "**/workspace/sources/**": true
+        "**/workspace/attic/**": true
     },
     "search.followSymlinks": false,
-    "search.useIgnoreFiles": false
+    "search.useIgnoreFiles": false,
+    "files.associations": {
+        "*.conf": "bitbake",
+        "*.inc": "bitbake"
+    },
+    "git.repositoryScanMaxDepth": 4,
+    "git.repositoryScanIgnoredFolders": [
+        "**/build/downloads/**",
+        "**/build/sstate-cache/**",
+        "**/build/tmp/**"
+    ]
 }
