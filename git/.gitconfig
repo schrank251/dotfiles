@@ -6,3 +6,5 @@
 	branch = false
 [pull]
 	ff = only
+[core]
+	editor = [ "$TERM_PROGRAM" = vscode ] && "code --wait $@" || nano
