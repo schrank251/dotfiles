@@ -44,6 +44,7 @@
     status                  # exit code of the last command
     command_execution_time  # duration of the last command
     background_jobs         # presence of background jobs
+    bitbake
     # direnv                # direnv status (https://direnv.net/)
     # asdf                  # asdf version manager (https://github.com/asdf-vm/asdf)
     virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
@@ -1686,6 +1687,15 @@
     # instant_prompt_example. This will give us the same `example` prompt segment in the instant
     # and regular prompts.
     prompt_example
+  }
+
+  function prompt_bitbake() {
+    [ -z "$BBPATH" ] && return
+    p10k segment -f 6 -t '%Bbb%b'
+  }
+
+  function instant_prompt_bitbake() {
+    prompt_bitbake
   }
 
   # User-defined prompt segments can be customized the same way as built-in segments.
