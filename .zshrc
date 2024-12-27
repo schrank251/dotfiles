@@ -115,6 +115,9 @@ alias ../../..='cd ../../..'
 alias ../../../..='cd ../../../..'
 alias ../../../../..='cd ../../../../..'
 
+alias l='ll'
+alias lsa='ls -A'
+
 unsetopt AUTO_CD
 
 if [ -d /dc/shellhistory/ ]; then
