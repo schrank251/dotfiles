@@ -109,6 +109,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+[[ -d $HOME/.local/bin ]] && export PATH="$HOME/.local/bin:$PATH"
+
 alias ..='cd ..'
 alias ../..='cd ../..'
 alias ../../..='cd ../../..'
