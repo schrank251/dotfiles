@@ -2,12 +2,13 @@
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
-    "cSpell.enabledLanguageIds": [
-        "git-commit",
-        "markdown",
-        "restructuredtext",
-        "scminput"
-    ],
+    "cSpell.enabledFileTypes": {
+        "*": false,
+        "git-commit": true,
+        "markdown": true,
+        "restructuredtext": true,
+        "scminput": true
+    },
     "cSpell.language": "en,de-DE",
     "dev.containers.defaultExtensionsIfInstalledLocally": [
         "eriklynd.json-tools",
