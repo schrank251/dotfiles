@@ -9,6 +9,10 @@
         "**/workspace/attic/**": true,
         "**/workspace/sources/**": true
     },
+    "files.associations": {
+        "*.conf": "bitbake",
+        "*.inc": "bitbake"
+    },
     "files.watcherExclude": {
         "**/cache/**": true,
         "**/downloads/**": true,
@@ -19,6 +23,12 @@
         "**/workspace/sources/**": true
     },
     "git.ignoreLimitWarning": true,
+    "git.repositoryScanIgnoredFolders": [
+        "**/build/downloads/**",
+        "**/build/sstate-cache/**",
+        "**/build/tmp/**"
+    ],
+    "git.repositoryScanMaxDepth": 4,
     "python.analysis.exclude": [
         "**/.git/**",
         "**/cache/**",
@@ -38,15 +48,5 @@
         "**/workspace/attic/**": true
     },
     "search.followSymlinks": false,
-    "search.useIgnoreFiles": false,
-    "files.associations": {
-        "*.conf": "bitbake",
-        "*.inc": "bitbake"
-    },
-    "git.repositoryScanMaxDepth": 4,
-    "git.repositoryScanIgnoredFolders": [
-        "**/build/downloads/**",
-        "**/build/sstate-cache/**",
-        "**/build/tmp/**"
-    ]
+    "search.useIgnoreFiles": false
 }
