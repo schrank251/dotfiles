@@ -1,4 +1,10 @@
 {
+    "[git-commit]": {
+        "editor.rulers": [
+            72,
+            80
+        ]
+    },
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
@@ -10,6 +16,7 @@
         "scminput": true
     },
     "cSpell.language": "en,de-DE",
+    "chat.commandCenter.enabled": false,
     "dev.containers.defaultExtensionsIfInstalledLocally": [
         "eriklynd.json-tools",
         "mhutchie.git-graph",
@@ -33,14 +40,16 @@
     "dev.containers.gitCredentialHelperConfigLocation": "none",
     "dotfiles.repository": "https://github.com/schrank251/dotfiles.git",
     "dotfiles.targetPath": "~/.dotfiles",
-    "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": true,
     "editor.scrollBeyondLastLine": false,
+    "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": true,
     "extensions.ignoreRecommendations": true,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.alwaysSignOff": true,
-    "git.inputValidation": "warn",
+    "git.inputValidation": true,
+    "git.inputValidationLength": 80,
     "git.inputValidationSubjectLength": 72,
+    "git.openRepositoryInParentFolders": "never",
     "git.showActionButton": {
         "commit": false,
         "publish": false,
