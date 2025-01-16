@@ -1,0 +1,4 @@
+bind ^W exit all
+bind ^X exit all
+bind ^F whereis all
+unbind ^B main
