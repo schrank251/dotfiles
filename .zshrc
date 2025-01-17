@@ -120,6 +120,8 @@ alias ../../../../..='cd ../../../../..'
 alias l='ll'
 alias lsa='ls -A'
 
+alias gcs='git commit --signoff'
+
 unsetopt AUTO_CD
 
 if [ -d /dc/shellhistory/ ]; then
