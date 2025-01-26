@@ -121,6 +121,7 @@ alias l='ll'
 alias lsa='ls -A'
 
 alias gcs='git commit --signoff'
+alias gdsw='git diff --staged --word-diff'
 
 unsetopt AUTO_CD
 
