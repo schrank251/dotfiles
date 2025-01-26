@@ -7,4 +7,4 @@
 [pull]
 	ff = only
 [core]
-	editor = [ "$TERM_PROGRAM" = vscode ] && "code --wait $@" || nano
+	editor = [ "$TERM_PROGRAM" = vscode ] > /dev/null 2>&1 && "code --wait $@" || nano
