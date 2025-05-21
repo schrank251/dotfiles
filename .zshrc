@@ -119,6 +119,8 @@ alias ../../../../..='cd ../../../../..'
 
 alias l='ll'
 alias lsa='ls -A'
+alias lt='ls -lrth'
+alias lta='ls -lrthA'
 
 alias gcs='git commit --signoff'
 alias gdsw='git diff --staged --word-diff'
