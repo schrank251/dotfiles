@@ -81,6 +81,10 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git tmux z)
 
+if [[ -d "$ZSH/custom/plugins/zsh-bitbake/" ]]; then
+  plugins+=(zsh-bitbake)
+fi
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
