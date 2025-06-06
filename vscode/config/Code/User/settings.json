@@ -8,6 +8,7 @@
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
+    "chat.commandCenter.enabled": false,
     "cSpell.enabledFileTypes": {
         "*": false,
         "git-commit": true,
@@ -16,7 +17,6 @@
         "scminput": true
     },
     "cSpell.language": "en,de-DE",
-    "chat.commandCenter.enabled": false,
     "dev.containers.defaultExtensionsIfInstalledLocally": [
         "eriklynd.json-tools",
         "mhutchie.git-graph",
@@ -40,8 +40,8 @@
     "dev.containers.gitCredentialHelperConfigLocation": "none",
     "dotfiles.repository": "https://github.com/schrank251/dotfiles.git",
     "dotfiles.targetPath": "~/.dotfiles",
-    "editor.scrollBeyondLastLine": false,
     "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": true,
+    "editor.scrollBeyondLastLine": false,
     "extensions.ignoreRecommendations": true,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -71,5 +71,6 @@
         "diffEditor.removedTextBackground": "#ff000033"
     },
     "workbench.colorTheme": "One Dark Pro",
+    "workbench.editor.empty.hint": "hidden",
     "workbench.list.horizontalScrolling": true
 }
