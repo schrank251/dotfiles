@@ -2,3 +2,7 @@ bind ^W exit all
 bind ^X exit all
 bind ^F whereis all
 unbind ^B main
+
+bind M-C curpos main
+bind ^C copy main
+bind ^V paste all
