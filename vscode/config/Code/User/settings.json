@@ -57,6 +57,7 @@
     },
     "git.suggestSmartCommit": false,
     "redhat.telemetry.enabled": false,
+    "remote-explorer.foldersSortOrder": "alphabetical",
     "search.useIgnoreFiles": false,
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.allowChords": false,
