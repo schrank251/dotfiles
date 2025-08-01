@@ -129,6 +129,8 @@ alias lta='ls -lrthA'
 alias gcs='git commit --signoff'
 alias gdsw='git diff --staged --word-diff'
 
+unalias tmux
+
 unsetopt AUTO_CD
 
 if [ -d /dc/shellhistory/ ]; then
