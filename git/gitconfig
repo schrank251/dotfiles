@@ -8,3 +8,4 @@
 	ff = only
 [core]
 	editor = [ "$TERM_PROGRAM" = vscode ] > /dev/null 2>&1 && "code --wait $@" || nano --fill=80 --constantshow --breaklonglines --guidestripe=72
+#	editor = [ "$TERM_PROGRAM" = vscode ] > /dev/null 2>&1 && "code --wait $@" || vi -c 'set textwidth=80' -c 'set wrap' -c 'set colorcolumn=72,80'
