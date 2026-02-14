@@ -115,6 +115,8 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -d $HOME/.local/bin ]] && export PATH="$HOME/.local/bin:$PATH"
 
+command -v gitlint > /dev/null 2>&1 && eval "$(_GITLINT_COMPLETE=zsh_source gitlint)"
+
 alias ..='cd ..'
 alias ../..='cd ../..'
 alias ../../..='cd ../../..'
