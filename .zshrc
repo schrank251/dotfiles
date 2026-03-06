@@ -85,6 +85,8 @@ if [[ -d "$ZSH/custom/plugins/zsh-bitbake/" ]]; then
   plugins+=(zsh-bitbake)
 fi
 
+[[ -d $HOME/.local/bin ]] && export PATH="$HOME/.local/bin:$PATH"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -113,8 +115,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[[ -d $HOME/.local/bin ]] && export PATH="$HOME/.local/bin:$PATH"
-
 command -v gitlint > /dev/null 2>&1 && eval "$(_GITLINT_COMPLETE=zsh_source gitlint)"
 
 alias ..='cd ..'
@@ -130,6 +130,11 @@ alias lta='ls -lrthA'
 
 alias gcs='git commit --signoff'
 alias gdsw='git diff --staged --word-diff'
+
+alias gro='git reset origin/$(git_current_branch)'
+alias groh='git reset origin/$(git_current_branch) --hard'
+alias grok='git reset origin/$(git_current_branch) --keep'
+alias gros='git reset origin/$(git_current_branch) --soft'
 
 unalias tmux
 
