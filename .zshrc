@@ -87,6 +87,12 @@ fi
 
 [[ -d $HOME/.local/bin ]] && export PATH="$HOME/.local/bin:$PATH"
 
+command -v bmaptool > /dev/null 2>&1 && plugins+=(zsh-bmaptool)
+command -v kas > /dev/null 2>&1 && plugins+=(zsh-kas)
+command -v korad > /dev/null 2>&1 && plugins+=(zsh-korad)
+command -v sispmctl > /dev/null 2>&1 && plugins+=(zsh-sispmctl)
+command -v usbsdmux > /dev/null 2>&1 && plugins+=(zsh-usbsdmux)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration

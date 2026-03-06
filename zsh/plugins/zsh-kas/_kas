@@ -1,0 +1,297 @@
+#compdef kas kas-container
+
+# zsh completion for kas and kas-container CLI tools
+# Completion for siemens/kas - setup tool for bitbake based projects
+
+# Main kas commands
+_kas_commands() {
+  local commands=(
+    'build:Checkout repositories and build target'
+    'checkout:Checkout repositories but do not build'
+    'clean:Clean build artifacts, keep sstate cache and downloads'
+    'cleansstate:Clean build artifacts and sstate cache, keep downloads'
+    'cleanall:Clean build artifacts, sstate cache and downloads'
+    'diff:Compare two KAS configurations'
+    'dump:Checkout repositories and write flat version of config to stdout'
+    'for-all-repos:Run specified command in each repository'
+    'lock:Create and update kas project lockfiles'
+    'menu:Provide configuration menu and trigger configured build'
+    'purge:Remove all data managed by kas'
+    'shell:Run a shell in the build environment'
+  )
+  _describe 'kas command' commands
+}
+
+# Global kas options
+_kas_global_options() {
+  local -a global_opts=(
+    '(-l --log-level)'{-l,--log-level}'[Set log level]:log level:(debug info warning error critical)'
+    '--version[Show kas version]'
+    '(-h --help)'{-h,--help}'[Show help message]'
+  )
+  _values 'global options' $global_opts
+}
+
+# Build command options
+_kas_build_options() {
+  local -a build_opts=(
+    '--config[Config file to build]:'
+    '--target[Select target to build]:target:'
+    '{-c,--cmd,--task}[Select which task to execute]:task:'
+    '--provenance[Enable provenance attestation generation]:(true mode=min mode=max)'
+    '--skip[Skip specified command]:command:'
+    '--force-checkout[Force checkout even if directory exists]'
+    '--update[Update existing build]'
+  )
+  _values 'build options' $build_opts
+}
+
+# Shell command options
+_kas_shell_options() {
+  local -a shell_opts=(
+    '--config[Config file for environment]:'
+    '{-c,--command}[Command to run in shell]:command:'
+    '--skip[Skip specified command]:command:'
+    '--force-checkout[Force checkout]'
+    '--update[Update existing build]'
+  )
+  _values 'shell options' $shell_opts
+}
+
+# Dump command options
+_kas_dump_options() {
+  local -a dump_opts=(
+    '--config[Config file to dump]:'
+    '--format[Output format]:(yaml json)'
+    '--indent[Line indent in spaces]:indent:'
+    '--sort[Sort keys in output]'
+    '--resolve-refs[Replace floating refs with exact SHAs]'
+    '--resolve-local[Add tracking information of root repo]'
+    '--resolve-env[Resolve environment variables]'
+    '--skip[Skip specified command]:command:'
+  )
+  _values 'dump options' $dump_opts
+}
+
+# Lock command options
+_kas_lock_options() {
+  local -a lock_opts=(
+    '--config[Config file]::'
+    '--update[Update existing lockfile]'
+    '--skip[Skip specified command]:command:'
+  )
+  _values 'lock options' $lock_opts
+}
+
+# Clean command options
+_kas_clean_options() {
+  local -a clean_opts=(
+    '--dry-run[Do not remove anything, just print what would be removed]'
+    '--isar[Use ISAR build directory layout]'
+  )
+  _values 'clean options' $clean_opts
+}
+
+# Diff command options
+_kas_diff_options() {
+  local -a diff_opts=(
+    '--format[Diff output format]:(json text)'
+    '--oneline[Use git oneline output for differing commits]'
+    '--no-color[Disable colored highlighting]'
+    '--commit-only[Only show commit differences]'
+    '--content-only[Only show configuration differences]'
+    '--skip[Skip specified command]:command:'
+  )
+  _values 'diff options' $diff_opts
+}
+
+# For-all-repos command options
+_kas_for_all_repos_options() {
+  local -a for_all_opts=(
+    '--config[Config file]::'
+    '--skip[Skip specified command]:command:'
+  )
+  _values 'for-all-repos options' $for_all_opts
+}
+
+# Menu command options
+_kas_menu_options() {
+  local -a menu_opts=(
+    '--config[Kconfig file]::'
+    '--skip[Skip specified command]:command:'
+  )
+  _values 'menu options' $menu_opts
+}
+
+# Purge command options
+_kas_purge_options() {
+  local -a purge_opts=(
+    '--dry-run[Do not remove anything, just print what would be removed]'
+    '--preserve-repo-refs[Preserve reference repositories]'
+    '--config[Config file]::'
+  )
+  _values 'purge options' $purge_opts
+}
+
+# File completion
+_kas_config_files() {
+  _files -g '*.yml:kas config files'
+}
+
+# Main completion dispatcher for kas
+_kas() {
+  local context state line curcontext="$curcontext"
+
+  _arguments -C \
+    '(-l --log-level)'{-l,--log-level}'[Set log level]:log level:(debug info warning error critical)' \
+    '--version[Show version]' \
+    '(-h --help)'{-h,--help}'[Show help]' \
+    '1: :_kas_commands' \
+    '*::args:->args'
+
+  case "$state" in
+    args)
+      case "$line[1]" in
+        build)
+          _arguments \
+            '::config file:_kas_config_files' \
+            '--target[Select target]:target:' \
+            '{-c,--cmd,--task}[Task]:task:' \
+            '--provenance[Provenance mode]:(true mode=min mode=max)' \
+            '--skip[Skip command]:command:' \
+            '--force-checkout' \
+            '--update' \
+            '*::extra bitbake args:'
+          ;;
+        shell)
+          _arguments \
+            '::config file:_kas_config_files' \
+            '{-c,--command}[Command]:command:' \
+            '--skip[Skip command]:command:' \
+            '--force-checkout' \
+            '--update'
+          ;;
+        checkout)
+          _arguments \
+            '::config file:_kas_config_files' \
+            '--skip[Skip command]:command:' \
+            '--force-checkout' \
+            '--update'
+          ;;
+        dump)
+          _arguments \
+            '::config file:_kas_config_files' \
+            '--format[Format]:(yaml json)' \
+            '--indent[Indent]:indent:' \
+            '--sort' \
+            '--resolve-refs' \
+            '--resolve-local' \
+            '--resolve-env' \
+            '--skip[Skip command]:command:'
+          ;;
+        lock)
+          _arguments \
+            '::config file:_kas_config_files' \
+            '--update' \
+            '--skip[Skip command]:command:'
+          ;;
+        diff)
+          _arguments \
+            '::config1 file:_kas_config_files' \
+            '::config2 file:_kas_config_files' \
+            '--format[Format]:(json text)' \
+            '--oneline' \
+            '--no-color' \
+            '--commit-only' \
+            '--content-only' \
+            '--skip[Skip command]:command:'
+          ;;
+        clean|cleansstate|cleanall)
+          _arguments \
+            '::config file:_kas_config_files' \
+            '--dry-run' \
+            '--isar'
+          ;;
+        purge)
+          _arguments \
+            '::config file:_kas_config_files' \
+            '--dry-run' \
+            '--preserve-repo-refs'
+          ;;
+        for-all-repos)
+          _arguments \
+            '::config file:_kas_config_files' \
+            '::command:' \
+            '--skip[Skip command]:command:'
+          ;;
+        menu)
+          _arguments \
+            '::kconfig file:' \
+            '--skip[Skip command]:command:'
+          ;;
+        *)
+          _message 'no more arguments'
+          ;;
+      esac
+      ;;
+  esac
+}
+
+# Completion dispatcher for kas-container
+_kas_container() {
+  local context state line curcontext="$curcontext"
+
+  local container_commands=(
+    'build:Check out repositories and build target'
+    'shell:Run a shell in the build environment'
+    'checkout:Check out repositories but do not build'
+    'dump:Check out repositories and write flat config to stdout'
+    'lock:Create and update kas project lockfiles'
+    'diff:Compare two KAS configurations'
+    'for-all-repos:Run specified command in each repository'
+    'clean:Clean build artifacts, keep sstate cache and downloads'
+    'cleansstate:Clean build artifacts and sstate cache, keep downloads'
+    'cleanall:Clean build artifacts, sstate cache and downloads'
+    'purge:Remove all data managed by kas'
+    'menu:Provide configuration menu and trigger build'
+  )
+
+  _arguments -C \
+    '(--help -h)'{--help,-h}'[Show help]' \
+    '(--version)--version[Show version]' \
+    '(--docker-image -i)'{--docker-image,-i}'[Docker image]:image:' \
+    '(--docker-args -d)'{--docker-args,-d}'[Docker args]:args:' \
+    '(--with-loop-dev)--with-loop-dev[Pass loop device to container]' \
+    '(--ssh-dir)--ssh-dir[SSH directory]:dir:_directories' \
+    '(--repo-ro)--repo-ro[Mount repo read-only]' \
+    '(--repo-rw)--repo-rw[Mount repo read-write]' \
+    '(-l --log-level)'{-l,--log-level}'[Log level]:(debug info warning error critical)' \
+    '(--isar)--isar[Use kas-isar container]' \
+    '1: :(${container_commands[@]})' \
+    '*::args:->args'
+
+  case "$state" in
+    args)
+      case "$line[1]" in
+        build|shell|checkout|dump|lock|diff|for-all-repos)
+          _kas_config_files
+          ;;
+        clean|cleansstate|cleanall|purge)
+          _kas_config_files
+          ;;
+        *)
+          ;;
+      esac
+      ;;
+  esac
+}
+
+# Dispatcher based on command name
+case "${${(M)${(s: :)${COMP_WORDS[1]}}:#kas*}:-${COMP_WORDS[1]}}" in
+  kas-container)
+    _kas_container "$@"
+    ;;
+  *)
+    _kas "$@"
+    ;;
+esac

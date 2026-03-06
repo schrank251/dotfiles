@@ -1,0 +1,1 @@
+compdef "_usbsdmux" usbsdmux

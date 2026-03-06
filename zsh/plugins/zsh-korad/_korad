@@ -1,0 +1,58 @@
+#compdef korad
+
+_korad() {
+  local context state line
+  typeset -A opt_args
+
+  _arguments -C \
+    '(-d --device)'{-d,--device}'[Manually select power supply serial device]:device:_files -f -/g "/dev/ttyACM*"' \
+    '(-h --help)'{-h,--help}'[Print help]' \
+    '(-V --version)'{-V,--version}'[Print version]' \
+    '1:command:->command' \
+    '*::arg:->args'
+
+  case $state in
+    command)
+      _values 'korad command' \
+        'power[Turns on or off the output of the power supply]' \
+        'status[Return status information about the power supply]' \
+        'voltage[Set the voltage of the output or config]' \
+        'current[Set the current of the output or config]' \
+        'save[Saves current panel settings to specified config]' \
+        'load[Loads config settings of specified number]' \
+        'ocp[Enable/Disable over current protection]' \
+        'ovp[Enable/Disable over voltage protection]' \
+        'beep[Enable/Disable Beep]' \
+        'list[List possible power supply devices]' \
+        'interactive[Read commands from stdin and execute them]' \
+        'help[Print this message or the help of the given subcommand(s)]' 
+      ;;
+    args)
+      case $line[1] in
+        power)
+          _values 'SWITCH' on off
+          ;;
+        current)
+          _message 'A (number)'
+          ;;
+        voltage)
+          _message 'V (number)'
+          ;;
+        save|load)
+          _values 'ID' 1 2 3 4 5
+          ;;
+        ocp|ovp|beep)
+          _values 'SWITCH' on off
+          ;;
+        help)
+          _values 'korad command' \
+            power status voltage current save load ocp ovp beep list interactive help
+          ;;
+        *)
+          ;;
+      esac
+      ;;
+  esac
+}
+
+_korad "$@"

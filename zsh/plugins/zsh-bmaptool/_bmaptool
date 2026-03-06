@@ -1,0 +1,69 @@
+#compdef bmaptool
+
+# Zsh completion script for bmaptool
+# A tool for creating block maps (bmap) and copying disk images using bmap files
+
+_bmaptool() {
+    local curcontext="$curcontext" state line
+    typeset -A opt_args
+
+    local -a global_opts
+    global_opts=(
+        '(-q --quiet)'{-q,--quiet}'[be quiet]'
+        '(-d --debug)'{-d,--debug}'[print debugging information]'
+        '--version[show version and exit]'
+        '(-h --help)'{-h,--help}'[show help message and exit]'
+    )
+
+    _arguments -C \
+        $global_opts \
+        '1: :->command' \
+        '*:: :->args' && return 0
+
+    case $state in
+        command)
+            local -a commands
+            commands=(
+                'create:generate bmap for an image file (which should be a sparse file)'
+                'copy:write an image to a block device using bmap'
+            )
+            _describe -t commands 'bmaptool command' commands
+            ;;
+        args)
+            case $line[1] in
+                create)
+                    _bmaptool_create
+                    ;;
+                copy)
+                    _bmaptool_copy
+                    ;;
+            esac
+            ;;
+    esac
+}
+
+_bmaptool_create() {
+    _arguments \
+        '(-o --output)'{-o,--output}'[the output file name (otherwise stdout is used)]:output file:_files' \
+        '--no-checksum[do not generate the checksum for block ranges in the bmap]' \
+        '(-h --help)'{-h,--help}'[show help message and exit]' \
+        '1:image file:_files'
+}
+
+_bmaptool_copy() {
+    _arguments \
+        '--bmap[the block map file for the image]:bmap file:_files -g "*.bmap"' \
+        '--nobmap[allow copying without a bmap file]' \
+        '--bmap-sig[the detached GPG signature for the bmap file]:signature file:_files -g "*.(sig|asc)"' \
+        '--no-sig-verify[do not verify bmap file GPG signature]' \
+        '--keyring[the GPG keyring to verify the GPG signature]:keyring file:_files' \
+        '--fingerprint[the GPG fingerprint expected to have signed the bmap file]:fingerprint:' \
+        '--no-verify[do not verify the data checksum while writing]' \
+        '--psplash-pipe[write progress to a psplash pipe]:pipe path:_files' \
+        '--removable-device[copy only if destination is a removable block device]' \
+        '(-h --help)'{-h,--help}'[show help message and exit]' \
+        '1:image file:_files' \
+        '2:destination:_files'
+}
+
+_bmaptool "$@"

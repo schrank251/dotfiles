@@ -1,0 +1,34 @@
+#compdef sispmctl
+
+_sispmctl() {
+  local curcontext="$curcontext" state line
+  
+  _arguments -C \
+    '(-h -\? -v -s -l -L -a -A -o -f -t -g -m -b)'{-h,-\?,--help}'[print usage information]' \
+    '(-h -\? -v -s -l -L -a -A -o -f -t -g -m -b)-v[print version and copyright]' \
+    '(-h -\? -v -s -l -L -a -A -o -f -t -g -m -b)-s[scan for supported GEMBIRD devices]' \
+    '(-h -\? -v -o -f -t -g -m -b -a -A)-l[daemonize and start listening as HTTP webserver (default port: 2638)]' \
+    '(-h -\? -v -o -f -t -g -m -b -a -A)-L[start listening as HTTP webserver without daemonizing]' \
+    '-p[IP network port for listener (default: 2638)]:port:' \
+    '-u[directory path where web pages are served (default: /usr/local/share/doc/sispmctl/skin)]:directory:_directories' \
+    '-i[IP address for web server to bind to]:IP address:' \
+    '(-h -\? -v -o -f -t -g -m -a -A)-b[switch buzzer on or off]:on/off:(on off)' \
+    '(-h -\? -v -b -f -t -g -m -a -A)-o[switch outlet(s) ON]:outlet:(1 2 3 4 all)' \
+    '(-h -\? -v -b -o -t -g -m -a -A)-f[switch outlet(s) OFF]:outlet:(1 2 3 4 all)' \
+    '(-h -\? -v -b -o -f -g -m -a -A)-t[toggle state of outlet(s)]:outlet:(1 2 3 4 all)' \
+    '(-h -\? -v -b -o -f -t -m -a -A)-g[show status of outlet(s)]:outlet:(1 2 3 4 all)' \
+    '(-h -\? -v -b -o -f -t -g -a -A)-m[get power supply status for outlet(s)]:outlet:(1 2 3 4 all)' \
+    '(-h -\? -v -b -o -f -t -g -m -A)-a[get schedule for outlet(s)]:outlet:(1 2 3 4 all)' \
+    '(-h -\? -v -b -o -f -t -g -m -a)'{-A,--Aat,--Aafter,--Ado,--Aloop}'[set schedule for outlet(s)]:outlet:(1 2 3 4 all)' \
+    '--Aat[sets an event time as a date]:time (YYYY-MM-DD HH:MM):' \
+    '--Aafter[sets an event time as N minutes after the previous one]:minutes:' \
+    '--Ado[sets the current event action]:action:(on off)' \
+    '--Aloop[loops to 1st event action after N minutes]:minutes:' \
+    '-d[use the device at the given position (starting with 0)]:device number:' \
+    '-D[same as -d, but choose by serial number]:serial number:' \
+    '-U[same as -d, but choose by USB Bus:Device]:bus:device:' \
+    '-n[print "1" and "0" instead of "ON" and "OFF"]' \
+    '-q[do not print explanations or disclaimers]'
+}
+
+_sispmctl

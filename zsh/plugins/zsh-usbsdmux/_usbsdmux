@@ -1,0 +1,59 @@
+#compdef usbsdmux usbsdmux-configure
+
+_usbsdmux() {
+    local context state line
+    typeset -A opt_args
+
+    _arguments -C \
+        '1:sg device:_files -g "/dev/sg*"' \
+        '--config[Set config file location]:config file:_files' \
+        '--json[Format output as json. Useful for scripting.]' \
+        '(-h --help)'{-h,--help}'[Show this help message and exit]' \
+        '2:command:->command' \
+        '*::command args:->args'
+
+    case $state in
+        command)
+            _values 'usbsdmux command' \
+                'get[Read the current state of the USB-SD-Mux]' \
+                'dut[Switch to the DUT]' \
+                'client[Switch to the DUT]' \
+                'host[Switch to the host]' \
+                'off[Disconnect from host and DUT]' \
+                'gpio[Manipulate a GPIO (open drain output only)]' \
+                'info[Show information about the SD card]'
+            ;;
+        args)
+            case $line[2] in
+                gpio)
+                    _values 'GPIO' 0 1
+                    ;;
+                *)
+                    ;;
+            esac
+    ;;
+    esac
+}
+
+_usbsdmux_configure() {
+    _arguments \
+        '1:sg device:_usbsdmux_sg_devices' \
+        '--productString=[Sets the product name that will be written]:product string:' \
+        '--manufacturerString=[Sets the manufacturerString that will be written]:manufacturer string:' \
+        '--VID=[Sets the VID that will be written]:vendor id:' \
+        '--ScsiManufacturer=[Sets the ScsiManufacturer that will be written]:SCSI manufacturer:' \
+        '--ScsiProduct=[Sets the ScsiProduct that will be written]:SCSI product:' \
+        '--PID=[Sets the USB-PID that will be written]:product id:' \
+        '(-h --help)'{-h,--help}'[show this help message and exit]' \
+        '2:serial:_message "serial number (12 hex digits)"'
+}
+
+# Main dispatcher
+case "$service" in
+    usbsdmux)
+        _usbsdmux "$@"
+        ;;
+    usbsdmux-configure)
+        _usbsdmux_configure "$@"
+        ;;
+esac
