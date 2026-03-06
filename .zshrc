@@ -136,6 +136,8 @@ alias groh='git reset origin/$(git_current_branch) --hard'
 alias grok='git reset origin/$(git_current_branch) --keep'
 alias gros='git reset origin/$(git_current_branch) --soft'
 
+zstyle ':completion:*:*:git-*:*' ignored-patterns 'ORIG_HEAD' 'origin'
+
 unalias tmux
 
 unsetopt AUTO_CD
