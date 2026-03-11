@@ -144,6 +144,8 @@ alias gros='git reset origin/$(git_current_branch) --soft'
 
 zstyle ':completion:*:*:git-*:*' ignored-patterns 'ORIG_HEAD' 'origin'
 
+command -v tred > /dev/null 2>&1 && alias tre='tree'
+
 unalias tmux
 
 unsetopt AUTO_CD
