@@ -924,7 +924,7 @@
 
   # Don't show context unless running with privileges or in SSH.
   # Tip: Remove the next line to always show context.
-  if [[ "$DISPLAY" ]] || [[ "${TERM_PROGRAM}" = "vscode" ]]; then
+  if [[ "$DISPLAY" ]] || [[ "${TERM_PROGRAM}" = "vscode" ]] || [[ "${TERM_PROGRAM}" = "tmux" ]]; then
     typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,SUDO,ROOT,REMOTE,REMOTE_SUDO}_{CONTENT,VISUAL_IDENTIFIER}_EXPANSION=
   else
     typeset -g POWERLEVEL9K_CONTEXT_DEFAULT_{CONTENT,VISUAL_IDENTIFIER}_EXPANSION=
