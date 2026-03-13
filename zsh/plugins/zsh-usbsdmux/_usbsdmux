@@ -1,59 +1,37 @@
 #compdef usbsdmux usbsdmux-configure
 
-# SPDX-License-Identifier: LGPL-2.1-or-later
-# SPDX-FileCopyrightText: 2026 The USB-SD-Mux Authors
-
-# Zsh completion script for usbsdmux and usbsdmux-configure
-
-_usbsdmux_sg_devices() {
-    local -a sg_devices
-    sg_devices=( /dev/sg*(N) )
-    if [[ ${#sg_devices[@]} -gt 0 ]]; then
-        _values 'sg device' ${sg_devices[@]}
-    else
-        _message 'no /dev/sg* devices found'
-    fi
-}
-
 _usbsdmux() {
-    local curcontext="$curcontext" state line
+    local context state line
     typeset -A opt_args
 
-    local -a commands
-    commands=(
-        'get:Read the current state of the USB-SD-Mux'
-        'dut:Switch to the DUT (Device Under Test)'
-        'client:Switch to the DUT (alias for dut)'
-        'host:Switch to the host'
-        'off:Disconnect from host and DUT'
-        'gpio:Manipulate a GPIO (open drain output only)'
-        'info:Show information about the SD card'
-    )
-
     _arguments -C \
-        '1:sg device:_usbsdmux_sg_devices' \
-        '--config=[Set config file location]:config file:_files' \
+        '1:sg device:_files -g "/dev/sg*"' \
+        '--config[Set config file location]:config file:_files' \
         '--json[Format output as json. Useful for scripting.]' \
-        '(-h --help)'{-h,--help}'[show this help message and exit]' \
+        '(-h --help)'{-h,--help}'[Show this help message and exit]' \
         '2:command:->command' \
         '*::command args:->args'
 
-    case "$state" in
+    case $state in
         command)
-            _describe -t commands 'usbsdmux command' commands
+            _values 'usbsdmux command' \
+                'get[Read the current state of the USB-SD-Mux]' \
+                'dut[Switch to the DUT]' \
+                'client[Switch to the DUT]' \
+                'host[Switch to the host]' \
+                'off[Disconnect from host and DUT]' \
+                'gpio[Manipulate a GPIO (open drain output only)]' \
+                'info[Show information about the SD card]'
             ;;
         args)
-            case "${line[2]}" in
+            case $line[2] in
                 gpio)
-                    _arguments \
-                        '2:gpio number:(0 1)' \
-                        '3:action:(low 0 high 1 get)'
+                    _values 'GPIO' 0 1
                     ;;
-                get|dut|client|host|off|info)
-                    # No additional arguments
+                *)
                     ;;
             esac
-            ;;
+    ;;
     esac
 }
 

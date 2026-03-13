@@ -5,7 +5,7 @@ _korad() {
   typeset -A opt_args
 
   _arguments -C \
-    '(-d --device)'{-d,--device}'[Manually select power supply serial device]:device:_files' \
+    '(-d --device)'{-d,--device}'[Manually select power supply serial device]:device:_files -g "/dev/tty*"' \
     '(-h --help)'{-h,--help}'[Print help]' \
     '(-V --version)'{-V,--version}'[Print version]' \
     '1:command:->command' \
