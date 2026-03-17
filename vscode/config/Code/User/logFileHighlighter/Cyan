@@ -1,0 +1,1 @@
+Cyan=[^A-Za-z_&-](last (failed )?login:|launching|checking|loading|creating|building|important|booting|starting|notice|informational|informationen|informazioni|informação|oplysninger|informations?|info|información|informasi|note|\(ii\)|\(\!\!\))[^A-Za-z_-]
