@@ -1,16 +1,57 @@
-yes
-true
-sucedido
-successo
+validated
+valid
+up-to-date
+uploaded
+updated
+unsubscribed
 successfully
 successful
 success
 succeeded
-ok
-framgångsrik
-exitoso
+subscribed
+status(?==0)
+running
+returned exit status(?= 0)
+returned exit code(?= 0)
+retrieved
+registered
+reached target
+passed
+okay
+mounted
+link up
+link is up
+initialized
+initialised
+init done
+found device
+found
+finished
+fetched
+exit status(?= 0)
+exit-code(?= 0)
+exit code(?= 0)
+established
 erfolgreich
 enabled
+downloaded
+done
+detected
+created
 connected
+configured
+completed
+complete
+\\bYES\\b
+\\bTRUE\\b
+brought up
+\\bREADY\\b
+\\bOK\\b
+\\bNEW\\b
+\\bloaded\\b
+available
+all succeeded
 allowed
+active
+activated
 accepted
