@@ -64,33 +64,62 @@
     "git.suggestSmartCommit": false,
     "logFileHighlighter.customPatterns": [
         {
-            "foreground": "#56B6C2",
-            "pattern": "INFO|NOTE|DEBUG"
+            "foreground": "#ABB2BF",
+            "pattern": "-Werror|umask 0o002 \\(not(?= 22)|scope no global|No setscene tasks|didn't need to be rerun and|any missing task queue dependencies|ABSOLUTELY NO WARRANTY|(?<= 0 )skipped|(?<= 0 )not upgraded|(?<= 0 )errors"
+        },
+        {
+            "foreground": "#61AFEF",
+            "pattern": "\\[[\\t ]*\\d+%\\]|\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z|^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d+Z\\s+|\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d+\\s+|\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}|\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}|\\d{2}:\\d{2}:\\d{2}\\.\\d+\\s+|\\b\\d{2}:\\d{2}:\\d{2}\\b|\\b\\d{2}:\\d{2}\\b|\\b\\d{1,3}%|(?<=[a-z]:)\\d+:\\d+(?=: )|\\[[ 0-9.:,]+\\]",
+            "patternFlags": "i"
         },
         {
             "foreground": "#56B6C2",
-            "pattern": "starting|start|loading|booting",
+            "pattern": "writing|watching|warming up|waiting for input|waiting for|waiting|verifying|validating|using|uploading|upgrading|updating|unpacking archive|unpacking|unmounted|unlocking|unloading|uninstalling|uncompressing|unblocking|triggering|triggered|transferring|tracking|tracing|throttling|testing|terminating|syncing|synchronizing|synchronized|switching to|switching|switched to|suspending|streaming|storing|stopping|starting up|starting|staging|spawning|sourcing|sorting|sleeping|shutting down|set up|setting up|setting[^s]|serving|sending|selecting|searching|scheduling|scanning|saving|running|rolling back|retrieving|resuming|restarting|restarted|restart|resolving|resizing|resetting|required|requesting|replicating|repairing|renaming|removing|removed|remapping|remaining|releasing|registering|regenerating|recovering|recovered|reconnecting|receiving|rebuilding|rebooting|reading|quitting|queued|processing|preprocessing|preparing|preconfiguring|polling|persisting|performing|pending|pausing|patching|parsing|overwriting|optimizing|opening|notice|nesting|negotiating|moving|mounting|monitoring|migrating|matching|mapping|logging out|logging in|logging|locking|loading|listening( on)?|linking|link becomes ready|leaving|launching|last (failed )?login:|killing|joining|issuing|interrupt received|installing|install complete|inspecting|initiated|initializing|initialising|inheriting|informations?|information(en)?|indexing|importing|important|\\(ii\\)|handshaking|handling|halting|generating|gathering|freeing|forwarding|following|flushing|finishing|finding|finalizing|filling|fetching|failing|extracting|expecting|expanding|exiting|exists|existing|executing|evaluating|establishing|entering|ensuring|encountered|encoding|enabling|dropping|draining|downloading|discovering|determining|detecting|deploying|deleting|deleted|decompressing|decoding|debugging|creating snapshot|creating|counting|correcting|copying|converting|continuing|connecting|configuring|computing|compressing|compiling|comparing|communicating|committing|combining|collecting|closing|cloning|cleaning up|cleaning|checking|check for|changing|canceling|calculating|caching|building|buffering|\\bTRYING\\b|\\bSTART\\b|bringing up|booting|\\bNOTE\\b|blocked|\\bINIT\\b|\\bINFO\\b|\\bEND\\b|\\bBUILT\\b|backing up|authorizing|attaching|attached|associating|applying|analyzing|allocating|adjusting|adding|activating|\\(\\!\\!\\)",
             "patternFlags": "i"
         },
         {
             "foreground": "#C678DD",
-            "pattern": "reading|\\bREAD\\b",
-            "patternFlags": "i"
-        },
-        {
-            "foreground": "#98C379",
-            "pattern": "\\bOK\\b",
+            "pattern": "returned exit status(?! \\d)|returned exit code(?! \\d)|localhost|exit status(?! \\d)|exit code(?! \\d)|call stack|\\bOFF\\b|\\bNULL\\b|\\bNONE\\b|\\bDEBUG\\b|\\b((25[0-5]|(2[0-4]|1\\d|[1-9]|)\\d)\\.?\\b){4}\\b",
             "patternFlags": "i"
         },
         {
             "foreground": "#E5C07B",
-            "pattern": "warning|warn|unknown|unable to|unable|not found|disabled|disable|deprecated|could not",
+            "pattern": "\\(ww\\)|was not found|warnung|warnings|warning\\(s\\)|warning|warned|warn|unstable|unsafe|unmet|unknown|uninitialized|unfinished|unexpected|unclosed file|unable to|unable|terminated|stopped|skipping|skipped|skip|retry(ing)?|Repo [A-Za-z]+ is dirty|refused|packages have unmet dependencies|out of (space|memory)|ooo?o?o?ps|obsolete|not yet been created|not set|not satisfied|not responding|not found|no more [A-Za-z]+ available|low (memory|disk)|link is down|is dirty|in use|ignored?|forcing|file not found|exited|exclamation|disconnection|disconnecting|disconnect(ed)?|disabling|disabled?|dirty|deprecated|couldn't( be)?( write| read| open| find)?|could not( be)?( write| read| open| find)?|connection (to (remote host|[a-z0-9.]+) )?(closed|terminated|stopped|not responding)|command not found|closed|chroot in use|caught signal [0-9]+|can't( be)?( write| read| open| find)?|cannot( be)?( write| read| open| find| be)?|binary not found|attention|alerts?|achtung|\\(\\?\\?\\)",
             "patternFlags": "i"
         },
         {
             "foreground": "#E06C75",
-            "pattern": "\\bNOT\\b|\\bNO\\b|fatal|failure|failed|fail|errors|error",
+            "pattern": "wrong( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|wrong|won't|will not|was not|violated?|unsupported( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|unsupported|unsuccessfull|unreachable|unimplemented|underrun|undefined|unavailable|unauthorized|too (many|large|small)|timeout|timed out|severe|seg(mentation )?fault|returned exit status(?= [1-9])|returned exit code(?= [1-9])|rejected|refused|problems?|permission (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)|permerrors?|panic|overflow|out of bounds|operation (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)|n't|not yet complete|not (valid|supported|properly|present|permitted|ok|implemented|found|empty|defined|allowed)|NOTFOUND|no such file( or directory)?|no such device( or address)?|no longer available|no checkout|no [A-Za-z]+( [A-Za-z]+)? found|\\(ni\\)|missing|mismatch|issues?|is not (valid|supported|properly|present|permitted|ok|implemented|found|empty|defined|allowed)|is not installable|is not going to be installed|is not|is invalid|invalid( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|invalidated|invalid|infected|incorrect( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|incorrect|incomplete|incompatible|improperly|improper( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|improper|illegal|has not|giving up|frozen?|freeze|forbidden|fehler|fatal|false|failure|fails|failed with|failed to( open)?( folder| file| fetch| directory)?|failed|fail|expired|exit status(?= [1-9])|exit code(?= [1-9])|exhausted|exceptions?|exceeds|exceeded|exceed|errors occurred|errors?|error occurred|erroneous|errno|\\(ee\\)|doesn't( support| respond| match| find| exist)?|does not( support| respond| match| find| exist)?|does not( have( any effect anymore)?)?|disallowed|didn't( support| respond| match| find| exist)?|did not( support| respond| match| find| exist)?|denied|deadlock|critical|crashed|crash|corruption|corrupted|corrupt|core dump|connection (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)|conflicts|conflict(ing)?|collisions?|cancelled|canceled|cancel|busy|build failure|broken( pipe)?|\\bNOT\\b|\\bNO\\b|\\bKO\\b|\\bERR\\b|\\bDOWN\\b|\\bBAD\\b|bad( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|[A-Za-z]+n't|authentication (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)|access (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)|aborting|aborted|abort(ed)?|abort",
             "patternFlags": "i"
+        },
+        {
+            "foreground": "#98C379",
+            "pattern": "valid|up-to-date|uploaded|updated|successfully|successful|success|succeeded|started|running|returned exit status(?= 0)|returned exit code(?= 0)|retrieved|registered|reached target|passed|okay|mounted|link up|link is up|initialized|initialised|init done|found device|found|finished|fetched|exit status(?= 0)|exit code(?= 0)|established|erfolgreich|enabled|downloaded|done|detected|created|connected|completed|complete|\\bYES\\b|\\bTRUE\\b|brought up|\\bREADY\\b|\\bOK\\b|\\bNEW\\b|\\bloaded\\b|available|all succeeded|allowed|active|activated|accepted",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#98C379",
+            "pattern": "#+\\[section\\]|\\bUP\\b"
+        },
+        {
+            "foreground": "#E06C75",
+            "pattern": "#+\\[error\\]"
+        },
+        {
+            "foreground": "#E5C07B",
+            "pattern": "#+\\[warning\\]|\\bIgn(?=:)"
+        },
+        {
+            "foreground": "#C678DD",
+            "pattern": "(?<=[\\t ])-D(?=[a-zA-Z]+)|#+\\[group\\]|#+\\[endgroup\\]|#+\\[debug\\]|\\bON\\b|\\bOn\\b|\\bmake(?= )|\\bkas(?= )|\\bcmake(?= )|\\bbitbake(?= )"
+        },
+        {
+            "foreground": "#56B6C2",
+            "pattern": "Inst(?= )|Get(?=:)|Execute(?= )|Depends(?=:)|Configure(?= )|Conf(?= )"
+        },
+        {
+            "foreground": "#61AFEF",
+            "pattern": "#+\\[command\\]"
         }
     ],
     "logFileHighlighter.enableProgressIndicator": false,

@@ -1,0 +1,10 @@
+(?<=[\\t ])-D(?=[a-zA-Z]+)
+#+\\[group\\]
+#+\\[endgroup\\]
+#+\\[debug\\]
+\\bON\\b
+\\bOn\\b
+\\bmake(?= )
+\\bkas(?= )
+\\bcmake(?= )
+\\bbitbake(?= )
