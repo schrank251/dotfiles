@@ -1,0 +1,54 @@
+{
+    "logFileHighlighter.customPatterns": [
+        {
+            "foreground": "#ABB2BF",
+            "pattern": "scope no global|ABSOLUTELY NO WARRANTY"
+        },
+        {
+            "foreground": "#61AFEF",
+            "pattern": "Blue",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#56B6C2",
+            "pattern": "Cyan",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#C678DD",
+            "pattern": "Magenta",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#E5C07B",
+            "pattern": "Yellow",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#E06C75",
+            "pattern": "Red",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#98C379",
+            "pattern": "Green",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#98C379",
+            "pattern": "\bUP\b"
+        },
+        {
+            "foreground": "#E06C75",
+            "pattern": "#+\[error\]"
+        },
+        {
+            "foreground": "#E5C07B",
+            "pattern": "#+\[warning\]"
+        },
+        {
+            "foreground": "#61AFEF",
+            "pattern": "#+\[command\]"
+        }
+    ]
+}

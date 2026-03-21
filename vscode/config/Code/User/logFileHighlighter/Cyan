@@ -1,22 +1,194 @@
+writing
+watching
+warming up
+waiting for input
+waiting for
+waiting
+verifying
+validating
+uploading
+upgrading
+updating
+unpacking archive
+unpacking
+unmounted
+unlocking
+unloading
+uninstalling
+uncompressing
+unblocking
+triggered
+transferring
+tracing
+throttling
+testing
+terminating
+synchronizing
+synchronized
+switching to
+switched to
+suspending
+streaming
+storing
+stopping
+starting up
 starting
-oplysninger
+staging
+spawning
+sourcing
+sleeping
+shutting down
+set up
+setting up
+serving
+sending
+selecting
+searching
+scheduling
+scanning
+saving
+running
+rolling back
+retrieving
+resuming
+restarting
+restarted
+restart
+resolving
+resizing
+resetting
+required
+requesting
+replicating
+repairing
+renaming
+removing
+remapping
+remaining
+releasing
+registering
+recovering
+recovered
+reconnecting
+rebooting
+reading
+quitting
+queued
+processing
+preprocessing
+preparing
+polling
+persisting
+performing
+pending
+pausing
+parsing
+overwriting
+optimizing
+opening
 notice
-note
+negotiating
+moving
+mounting
+monitoring
+migrating
+mapping
+logging out
+logging in
+locking
 loading
+listening( on)?
+link becomes ready
 launching
 last (failed )?login:
-informação
-informazioni
+killing
+joining
+issuing
+interrupt received
+installing
+install complete
+inspecting
+initiated
+initializing
+initialising
 informations?
-informationen
-informational
-informasi
-información
-info
+information(en)?
+indexing
+importing
 important
-creating
-checking
-building
-booting
 \\(ii\\)
+handshaking
+handling
+halting
+generating
+gathering
+freeing
+forwarding
+flushing
+fetching
+failing
+extracting
+expecting
+expanding
+exiting
+exists
+existing
+executing
+evaluating
+establishing
+ensuring
+encountered
+encoding
+enabling
+dropping
+draining
+downloading
+discovering
+determining
+detecting
+deploying
+deleting
+deleted
+decompressing
+decoding
+debugging
+creating snapshot
+creating
+copying
+converting
+continuing
+connecting
+configuring
+compressing
+compiling
+comparing
+communicating
+committing
+collecting
+closing
+cleaning up
+checking
+changing
+canceling
+calculating
+caching
+building
+buffering
+\\bTRYING\\b
+\\bSTART\\b
+bringing up
+booting
+\\bNOTE\\b
+blocked
+\\bINIT\\b
+\\bINFO\\b
+binding
+backing up
+authorizing
+attaching
+attached
+applying
+analyzing
+allocating
+activating
 \\(\\!\\!\\)

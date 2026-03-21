@@ -64,33 +64,54 @@
     "git.suggestSmartCommit": false,
     "logFileHighlighter.customPatterns": [
         {
-            "foreground": "#56B6C2",
-            "pattern": "INFO|NOTE|DEBUG"
+            "foreground": "#ABB2BF",
+            "pattern": "scope no global|ABSOLUTELY NO WARRANTY"
+        },
+        {
+            "foreground": "#61AFEF",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d+Z\\s+|\\[[ 0-9.:,]+\\]",
+            "patternFlags": "i"
         },
         {
             "foreground": "#56B6C2",
-            "pattern": "starting|start|loading|booting",
+            "pattern": "writing|watching|warming up|waiting for input|waiting for|waiting|verifying|validating|uploading|upgrading|updating|unpacking archive|unpacking|unmounted|unlocking|unloading|uninstalling|uncompressing|unblocking|triggered|transferring|tracing|throttling|testing|terminating|synchronizing|synchronized|switching to|switched to|suspending|streaming|storing|stopping|starting up|starting|staging|spawning|sourcing|sleeping|shutting down|set up|setting up|serving|sending|selecting|searching|scheduling|scanning|saving|running|rolling back|retrieving|resuming|restarting|restarted|restart|resolving|resizing|resetting|required|requesting|replicating|repairing|renaming|removing|remapping|remaining|releasing|registering|recovering|recovered|reconnecting|rebooting|reading|quitting|queued|processing|preprocessing|preparing|polling|persisting|performing|pending|pausing|parsing|overwriting|optimizing|opening|notice|negotiating|moving|mounting|monitoring|migrating|mapping|logging out|logging in|locking|loading|listening( on)?|link becomes ready|launching|last (failed )?login:|killing|joining|issuing|interrupt received|installing|install complete|inspecting|initiated|initializing|initialising|informations?|information(en)?|indexing|importing|important|\\(ii\\)|handshaking|handling|halting|generating|gathering|freeing|forwarding|flushing|fetching|failing|extracting|expecting|expanding|exiting|exists|existing|executing|evaluating|establishing|ensuring|encountered|encoding|enabling|dropping|draining|downloading|discovering|determining|detecting|deploying|deleting|deleted|decompressing|decoding|debugging|creating snapshot|creating|copying|converting|continuing|connecting|configuring|compressing|compiling|comparing|communicating|committing|collecting|closing|cleaning up|checking|changing|canceling|calculating|caching|building|buffering|\\bTRYING\\b|\\bSTART\\b|bringing up|booting|\\bNOTE\\b|blocked|\\bINIT\\b|\\bINFO\\b|binding|backing up|authorizing|attaching|attached|applying|analyzing|allocating|activating|\\(\\!\\!\\)",
             "patternFlags": "i"
         },
         {
             "foreground": "#C678DD",
-            "pattern": "reading|\\bREAD\\b",
-            "patternFlags": "i"
-        },
-        {
-            "foreground": "#98C379",
-            "pattern": "\\bOK\\b",
+            "pattern": "localhost|\\bNULL\\b|\\bNONE\\b|\\bDEBUG\\b|([1-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-4])\\.[0-9]+\\.[0-9]+\\.[0-9]+",
             "patternFlags": "i"
         },
         {
             "foreground": "#E5C07B",
-            "pattern": "warning|warn|unknown|unable to|unable|not found|disabled|disable|deprecated|could not",
+            "pattern": "\\(ww\\)|warnung|warnings|warning\\(s\\)|warning|warned|warn|unstable|unsafe|unknown|uninitialized|unexpected|unclosed file|unable to|unable|terminated|stopped|skipping|skipped|skip|retry(ing)?|refused|out of (space|memory)|ooo?o?o?ps|obsolete|not responding|not found|no more [A-Za-z] available|low (memory|disk)|link is down|ignored?|forcing|file not found|exited|exclamation|disconnection|disconnecting|disconnect(ed)?|disabling|disabled?|deprecated|could not|connection (to (remote host|[a-z0-9.]+) )?(closed|terminated|stopped|not responding)|command not found|closed|caught signal [0-9]+|cannot|binary not found|attention|alerts?|achtung|\\(\\?\\?\\)",
             "patternFlags": "i"
         },
         {
             "foreground": "#E06C75",
-            "pattern": "\\bNOT\\b|\\bNO\\b|fatal|failure|failed|fail|errors|error",
+            "pattern": "wrong( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|wrong|violated?|unsupported( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|unsupported|unsuccessfull|unreachable|unimplemented|underrun|undefined|unavailable|unauthorized|too (many|large|small)|timeout|timed out|severe|seg(mentation )?fault|refused|problem|permission (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)|permerrors?|panic|overflow|out of bounds|operation (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)|not (valid|supported|properly|present|permitted|ok|implemented|empty|defined|allowed)|no such file( or directory)?|no longer available|no [A-Za-z]+( [A-Za-z]+)? found|\\(ni\\)|missing|mismatch|issues?|invalid( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|invalidated|invalid|infected|incorrect( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|incorrect|incompatible|improperly|improper( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|improper|illegal|giving up|frozen?|freeze|forbidden|fehler|fatal|false|failure|failed to( open)?( folder| file| directory)?|failed|fail|expired|exhausted|exception|exceeds|exceeded|exceed|errors?|erroneous|\\(ee\\)|does not( support| respond| exist)?|does not( have( any effect anymore)?)?|disallowed|did not respond|denied|deadlock|critical|crashed|crash|corruption|corrupted|corrupt|core dump|connection (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)|conflicts|conflict(ing)?|collisions?|cancelled|canceled|cancel|busy|broken( pipe)?|\\bNOT\\b|\\bNO\\b|\\bKO\\b|\\bERR\\b|\\bDOWN\\b|\\bBAD\\b|bad( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|authentication (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)|access (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)|aborting|aborted|abort(ed)?|abort",
             "patternFlags": "i"
+        },
+        {
+            "foreground": "#98C379",
+            "pattern": "valid|updated|successfully|successful|success|succeeded|started|running|registered|reached target|passed|okay|mounted|loaded|link up|link is up|initialized|initialised|init done|found device|found|finished|fetched|established|erfolgreich|enabled|done|detected|created|connected|completed|\\bYES\\b|\\bTRUE\\b|brought up|\\bREADY\\b|\\bOK\\b|\\bNEW\\b|available|allowed|active|activated|accepted",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#98C379",
+            "pattern": "\\bUP\\b"
+        },
+        {
+            "foreground": "#E06C75",
+            "pattern": "#+\\[error\\]"
+        },
+        {
+            "foreground": "#E5C07B",
+            "pattern": "#+\\[warning\\]"
+        },
+        {
+            "foreground": "#61AFEF",
+            "pattern": "#+\\[command\\]"
         }
     ],
     "redhat.telemetry.enabled": false,

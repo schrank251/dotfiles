@@ -1,16 +1,42 @@
-yes
-true
-sucedido
-successo
+valid
+updated
 successfully
 successful
 success
 succeeded
-ok
-framgångsrik
-exitoso
+started
+running
+registered
+reached target
+passed
+okay
+mounted
+loaded
+link up
+link is up
+initialized
+initialised
+init done
+found device
+found
+finished
+fetched
+established
 erfolgreich
 enabled
+done
+detected
+created
 connected
+completed
+\\bYES\\b
+\\bTRUE\\b
+brought up
+\\bREADY\\b
+\\bOK\\b
+\\bNEW\\b
+available
 allowed
+active
+activated
 accepted

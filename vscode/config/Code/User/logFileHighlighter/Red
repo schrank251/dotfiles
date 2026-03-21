@@ -1,44 +1,74 @@
 wrong( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
-virhe
+wrong
+violated?
 unsupported( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
 unsupported
 unsuccessfull
+unreachable
 unimplemented
 underrun
+undefined
+unavailable
+unauthorized
+too (many|large|small)
+timeout
+timed out
+severe
 seg(mentation )?fault
 refused
 problem
 permission (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
 permerrors?
+panic
 overflow
+out of bounds
 operation (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
-not supported
-not properly
-not permitted
-not ok
-not implemented
-not allowed
+not (valid|supported|properly|present|permitted|ok|implemented|empty|defined|allowed)
+no such file( or directory)?
+no longer available
 no [A-Za-z]+( [A-Za-z]+)? found
-no
-ko
+\\(ni\\)
+missing
+mismatch
+issues?
 invalid( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+invalidated
 invalid
+infected
 incorrect( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+incorrect
+incompatible
 improperly
 improper( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
-greška
-fel
-fejl
-fehlers?
+improper
+illegal
+giving up
+frozen?
+freeze
+forbidden
+fehler
+fatal
 false
 failure
+failed to( open)?( folder| file| directory)?
 failed
+fail
+expired
+exhausted
+exception
+exceeds
+exceeded
+exceed
 errors?
-errore
-erro
-erreurs?
+erroneous
+\\(ee\\)
+does not( support| respond| exist)?
+does not( have( any effect anymore)?)?
 disallowed
+did not respond
 denied
+deadlock
+critical
 crashed
 crash
 corruption
@@ -46,8 +76,24 @@ corrupted
 corrupt
 core dump
 connection (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+conflicts
+conflict(ing)?
+collisions?
+cancelled
+canceled
+cancel
+busy
+broken( pipe)?
+\\bNOT\\b
+\\bNO\\b
+\\bKO\\b
+\\bERR\\b
+\\bDOWN\\b
+\\bBAD\\b
 bad( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
 authentication (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
 access (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
-\\(ni\\)
-\\(ee\\)
+aborting
+aborted
+abort(ed)?
+abort
