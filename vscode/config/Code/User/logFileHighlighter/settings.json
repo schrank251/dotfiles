@@ -1,0 +1,62 @@
+{
+    "logFileHighlighter.customPatterns": [
+        {
+            "foreground": "#ABB2BF",
+            "pattern": "Cwhite"
+        },
+        {
+            "foreground": "#61AFEF",
+            "pattern": "Blue",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#56B6C2",
+            "pattern": "Cyan",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#C678DD",
+            "pattern": "Magenta",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#E5C07B",
+            "pattern": "Yellow",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#E06C75",
+            "pattern": "Red",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#98C379",
+            "pattern": "Green",
+            "patternFlags": "i"
+        },
+        {
+            "foreground": "#98C379",
+            "pattern": "Cgreen"
+        },
+        {
+            "foreground": "#E06C75",
+            "pattern": "Cred"
+        },
+        {
+            "foreground": "#E5C07B",
+            "pattern": "Cyellow"
+        },
+        {
+            "foreground": "#C678DD",
+            "pattern": "Cmagenta"
+        },
+        {
+            "foreground": "#56B6C2",
+            "pattern": "Ccyan"
+        },
+        {
+            "foreground": "#61AFEF",
+            "pattern": "Cblue"
+        }
+    ]
+}
