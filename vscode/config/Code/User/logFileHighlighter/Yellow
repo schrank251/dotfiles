@@ -1,43 +1,112 @@
-warnungs?
-warnings?
-varoitus
-varning
-uyari
-upozorenje
+\\(ww\\)
+was not found
+warnung
+warnings
+warning\\(s\\)
+warning
+warned
+warn
+\\[W\\]
+unstable
+unsafe
+unrecognized
+unmet
 unknown
+uninitialized
+unfinished
 unexpected
+unequal
+unclosed file
+unassigned
 unable to
+unable
+truncated
+truncate
+too old
+too long
+timeout
+time out
 terminated
 stopped
+still
+skipping
+skipped
+skip
+should
+retry(ing)?
+required
+require
+Repo [A-Za-z]+ is dirty
 refused
-peringatan
-pedwarn
+refuse
+refus
+read-only
+read only
+packages have unmet dependencies
 out of (space|memory)
+out of range
+orphan
 ooo?o?o?ps
+only
+obsolete
+not yet been created
+not set
+not satisfied
 not responding
-no more [A-Za-z] available
+not found
+no more [A-Za-z]+ available
+never
+more than
+malformed
 low (memory|disk)
+link is down
+limiting
+limited
+limit
+larger
+kill
+is not found
+is dirty
+in use
+ignored?
+forcing
+force
 file not found
+expecting
+expected
+expect
 exited
 exclamation
-disconnected
-disconnect(ion)?
-disabled
+empty
+disconnection
+disconnecting
+disconnect(ed)?
+disabling
+disabled?
+dirty
+different
+differ
 deprecated
-could not
-connection (to (remote host|[a-z0-9.]+) )?)?(closed|terminated|stopped|not responding
+couldn't( be)?( write| read| open| find)?
+could not( be)?( write| read| open| find)?
+couldn ( be)?( write| read| open| find)?
+connection (to (remote host|[a-z0-9.]+) )?(closed|terminated|stopped|not responding)
 command not found
 closed
+chroot in use
 caught signal [0-9]+
-cannot
+can't( be)?( write| read| open| find)?
+can only
+cannot( be)?( write| read| open| find| be)?
+\\bSTALE\\b
+\\bOLD\\b
+\\bMUST\\b
 binary not found
-avvertimento
-aviso
-avertissement
 attention
+attempting
+attempt
+already defined
+already
 alerts?
-advertencia
-advarsel
 achtung
-\\(ww\\)
 \\(\\?\\?\\)

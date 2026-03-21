@@ -1,53 +1,174 @@
 wrong( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
-virhe
+wrong
+won't
+will not
+was not
+violation
+violates?
+violates
+violated?
+violated
+violate
 unsupported( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
 unsupported
 unsuccessfull
+unsuccessful
+unreadable
+unreachable
 unimplemented
 underrun
+undefined
+unavailable
+unauthorized
+too (many|large|small)
+timed out
+tasks? failed
+status(?==[1-9])
+severe
 seg(mentation )?fault
+returned exit status(?= [1-9])
+returned exit-code(?= [1-9])
+returned exit code(?= [1-9])
+rejecting
+rejected
+reject
 refused
+problems( have)? occurred
+problems
+problem( has)? occurred
 problem
-permission (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+permission (deny|denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
 permerrors?
+panic
 overflow
-operation (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
-not supported
-not properly
-not permitted
-not ok
-not implemented
-not allowed
+out of bounds
+operation (deny|denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+n't
+not yet complete
+not (valid|used|supported|properly|present|permitted|ok|installed|implemented|found|empty|defined|compatible|authorized|allowed)
+NOTFOUND
+no( such)? files?( or directory)?
+no( such)? devices?( or address)?
+no such
+no (space|compatible|checkout)
+non-zero exit status
+non-zero exit-code
+non-zero exit code
+non-zero code
+nonexistent
+non-existent
+non existent
+nonexist
+no longer available
 no [A-Za-z]+( [A-Za-z]+)? found
-no
-ko
+\\(ni\\)
+missing
+mismatch(ed)?
+issues?
+is not installable
+is not going to be installed
+is not( a)? (valid|used|supported|properly|present|permitted|ok|installed|implemented|found|empty|defined|allowed)
+is not
+is invalid
 invalid( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+invalidated
 invalid
+interrupting
+interrupted
+interrupted
+interrupt
+insufficient
+infected
 incorrect( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+incorrect
+incomplete
+incompatible
+inaccessible
 improperly
 improper( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
-greška
-fel
-fejl
-fehlers?
+improper
+illegal
+has not
+giving up
+frozen?
+freeze
+forbidden
+fehler
+faulty
+fault
+fatal
 false
 failure
+fails
+failed with( result)?
+failed to( open| load| enable| disable)?( folder| file| fetch| directory)?
 failed
-errors?
-errore
-erro
-erreurs?
+fail
+\\[F\\]
+expired
+exit status(?= [1-9])
+exit-code(?= [1-9])
+exit code(?= [1-9])
+exhausted
+exceptions?
+exceeds
+exceeded
+exceed
+errors( have)? occurred
+errors
+error (messages?|codes?)
+error( has)? occurred
+error
+erroneous
+errno
+\\(ee\\)
+\\[E\\]
+doesn't( support| respond| match| find| exist)?
+does not( support| respond| match| find| exist)?
+does not( have( any effect anymore)?)?
 disallowed
+didn't( support| respond| match| find| exist)?
+did not( support| respond| match| find| exist)?
+deny
 denied
+deadlock
+critical
 crashed
 crash
 corruption
 corrupted
 corrupt
-core dump
-connection (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+core dump(ed)?
+connection (deny|denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+conflicts
+conflict(ing)?
+collisions?
+CMake Error( at)?
+can not
+cancelled
+canceled
+cancel
+\\[C\\]
+busy
+build failure
+broken( pipe)?
+\\bNOT\\b
+\\bNO\\b
+\\bMISS[A-Za-z]*
+\\bKO\\b
+\\bFAULT\\b
+\\bERR\\b
+\\bDOWN\\b
+\\bDO NOT\\b
+\\bDIED\\b
+\\bBUG\\b
+\\bBAD\\b
+badly
 bad( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
-authentication (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
-access (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
-\\(ni\\)
-\\(ee\\)
+[A-Za-z]+n't
+authentication (deny|denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+access (deny|denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+aborting
+aborted
+abort(ed)?
+abort
