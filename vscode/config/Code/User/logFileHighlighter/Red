@@ -1,1 +1,53 @@
-Red=([^A-Za-z_&-]((bad|wrong|incorrect|improper|invalid|unsupported|bad)( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)|not properly|improperly|(operation |connection |authentication |access |permission )?(denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)|no [A-Za-z]+( [A-Za-z]+)? found|invalid|unsupported|not supported|seg(mentation )?fault|corruption|corrupted|corrupt|overflow|underrun|not ok|unimplemented|unsuccessfull|not implemented|permerrors?|fehlers?|errore|errors?|erreurs?|fejl|virhe|greška|erro|crash|crashed|core dump|fel|\(ee\)|\(ni\))[^A-Za-z_-]|[=>"':.,;({\[][ ]*(false|no|ko)[ ]*[]=>"':.,;)} ])
+wrong( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+virhe
+unsupported( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+unsupported
+unsuccessfull
+unimplemented
+underrun
+seg(mentation )?fault
+refused
+problem
+permission (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+permerrors?
+overflow
+operation (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+not supported
+not properly
+not permitted
+not ok
+not implemented
+not allowed
+no [A-Za-z]+( [A-Za-z]+)? found
+no
+ko
+invalid( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+invalid
+incorrect( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+improperly
+improper( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+greška
+fel
+fejl
+fehlers?
+false
+failure
+failed
+errors?
+errore
+erro
+erreurs?
+disallowed
+denied
+crashed
+crash
+corruption
+corrupted
+corrupt
+core dump
+connection (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+bad( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+authentication (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+access (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+\\(ni\\)
+\\(ee\\)

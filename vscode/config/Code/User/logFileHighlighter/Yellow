@@ -1,1 +1,43 @@
-Yellow=[^A-Za-z_&-](\[\-w[A-Za-z-]+\]|caught signal [0-9]+|cannot|(connection (to (remote host|[a-z0-9.]+) )?)?(closed|terminated|stopped|not responding)|exited|no more [A-Za-z] available|unexpected|(command |binary |file )?not found|ooo?o?o?ps|out of (space|memory)|low (memory|disk)|unknown|disabled|disconnected|deprecated|refused|disconnect(ion)?|advertencia|avvertimento|attention|warnings?|achtung|exclamation|alerts?|warnungs?|advarsel|pedwarn|aviso|varoitus|upozorenje|peringatan|uyari|varning|avertissement|\(ww\)|\(\?\?\)|could not|unable to)[^A-Za-z_-]
+warnungs?
+warnings?
+varoitus
+varning
+uyari
+upozorenje
+unknown
+unexpected
+unable to
+terminated
+stopped
+refused
+peringatan
+pedwarn
+out of (space|memory)
+ooo?o?o?ps
+not responding
+no more [A-Za-z] available
+low (memory|disk)
+file not found
+exited
+exclamation
+disconnected
+disconnect(ion)?
+disabled
+deprecated
+could not
+connection (to (remote host|[a-z0-9.]+) )?)?(closed|terminated|stopped|not responding
+command not found
+closed
+caught signal [0-9]+
+cannot
+binary not found
+avvertimento
+aviso
+avertissement
+attention
+alerts?
+advertencia
+advarsel
+achtung
+\\(ww\\)
+\\(\\?\\?\\)

@@ -1,1 +1,16 @@
-Green=([^A-Za-z_&-](accepted|allowed|enabled|connected|erfolgreich|exitoso|successo|sucedido|framgångsrik|successfully|successful|succeeded|success)[^A-Za-z_-]|[=>"':.,;({\[][ ]*(true|yes|ok)[ ]*[]=>"':.,;)} ])
+yes
+true
+sucedido
+successo
+successfully
+successful
+success
+succeeded
+ok
+framgångsrik
+exitoso
+erfolgreich
+enabled
+connected
+allowed
+accepted
