@@ -1,44 +1,93 @@
 wrong( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
-virhe
+wrong
+won't
+will not
+violated?
 unsupported( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
 unsupported
 unsuccessfull
+unreachable
 unimplemented
 underrun
+undefined
+unavailable
+unauthorized
+too (many|large|small)
+timeout
+timed out
+severe
 seg(mentation )?fault
+returned exit status(?= [^0])
+rejected
 refused
-problem
+problems?
 permission (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
 permerrors?
+panic
 overflow
+out of bounds
 operation (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
-not supported
-not properly
-not permitted
-not ok
-not implemented
-not allowed
+n't
+not yet complete
+not (valid|supported|properly|present|permitted|ok|implemented|found|empty|defined|allowed)
+NOTFOUND
+no such file( or directory)?
+no longer available
+no checkout
 no [A-Za-z]+( [A-Za-z]+)? found
-no
-ko
+\\(ni\\)
+missing
+mismatch
+issues?
+is not (valid|supported|properly|present|permitted|ok|implemented|found|empty|defined|allowed)
+is not
 invalid( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+invalidated
 invalid
+infected
 incorrect( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+incorrect
+incomplete
+incompatible
 improperly
 improper( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
-greška
-fel
-fejl
-fehlers?
+improper
+illegal
+giving up
+frozen?
+freeze
+forbidden
+fehler
+fatal
 false
 failure
+fails
+failed to( open)?( folder| file| directory)?
 failed
+fail
+expired
+exit status(?= [^0])
+exit code(?= [^0])
+exhausted
+exceptions?
+exceeds
+exceeded
+exceed
+errors occurred
 errors?
-errore
-erro
-erreurs?
+error occurred
+erroneous
+errno
+\\(ee\\)
+doesn't( support| respond| match| exist)?
+does not( support| respond| match| exist)?
+does not( have( any effect anymore)?)?
 disallowed
+didn't( support| respond| match| exist)?
+did not( support| respond| match| exist)?
 denied
+deadlock
+critical
 crashed
 crash
 corruption
@@ -46,8 +95,26 @@ corrupted
 corrupt
 core dump
 connection (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
+conflicts
+conflict(ing)?
+collisions?
+cancelled
+canceled
+cancel
+busy
+build failure
+broken( pipe)?
+\\bNOT\\b
+\\bNO\\b
+\\bKO\\b
+\\bERR\\b
+\\bDOWN\\b
+\\bBAD\\b
 bad( file| memory)? (descriptor|alloc(ation)?|addr(ess)?|owner(ship)?|arg(ument)?|param(eter)?|setting|length|filename)
+[A-Za-z]+n't
 authentication (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
 access (denied|disallowed|not allowed|refused|problem|failed|failure|not permitted)
-\\(ni\\)
-\\(ee\\)
+aborting
+aborted
+abort(ed)?
+abort
