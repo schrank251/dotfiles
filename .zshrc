@@ -136,6 +136,7 @@ alias lta='ls -lrthA'
 
 alias gcs='git commit --signoff'
 alias gdsw='git diff --staged --word-diff'
+alias gdupw='git diff @{upstream} --word-diff'
 
 alias gro='git reset origin/$(git_current_branch)'
 alias groh='git reset origin/$(git_current_branch) --hard'
