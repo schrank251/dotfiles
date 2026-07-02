@@ -1,0 +1,8 @@
+#compdef dpkg-tree
+
+_dpkg-tree() {
+  _arguments \
+    '1:dpkg-tree file:_files -g "*.u#deb(-.)"' \
+}
+
+_dpkg-tree "$@"

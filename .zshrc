@@ -93,6 +93,8 @@ command -v korad > /dev/null 2>&1 && plugins+=(zsh-korad)
 command -v sispmctl > /dev/null 2>&1 && plugins+=(zsh-sispmctl)
 command -v usbsdmux > /dev/null 2>&1 && plugins+=(zsh-usbsdmux)
 
+#plugins+=(zsh-dpkg-tree)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -146,7 +148,7 @@ alias gros='git reset origin/$(git_current_branch) --soft'
 zstyle ':completion:*:*:git-*:*' ignored-patterns 'ORIG_HEAD' 'origin'
 
 command -v tred > /dev/null 2>&1 && alias tre='tree'
-dpkgtree() {
+dpkg-tree() {
   dpkg -c "$1" | awk '{print $6}' | tree --fromfile
 }
 
