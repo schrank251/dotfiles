@@ -93,6 +93,9 @@
             "patternFlags": "i"
         }
     ],
+    "logFileHighlighter.enableProgressIndicator": false,
+    "logFileHighlighter.progressIndicatorUnderlineColor": "#61AFEF",
+    "logViewer.chunkSizeKb": 64000,
     "redhat.telemetry.enabled": false,
     "remote-explorer.foldersSortOrder": "alphabetical",
     "search.useIgnoreFiles": false,
