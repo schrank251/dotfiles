@@ -156,6 +156,8 @@ unalias tmux
 
 unsetopt AUTO_CD
 
+WORDCHARS='!"#$%&'\''()*+-.<>?[\]^_`{|}~'
+
 if [ -d /dc/shellhistory/ ]; then
   export HISTFILE=/dc/shellhistory/.zsh_history
   export PROMPT_COMMAND='history -a'
