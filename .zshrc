@@ -79,7 +79,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux z)
+plugins=(docker git tmux z)
 
 if [[ -d "$ZSH/custom/plugins/zsh-bitbake/" ]]; then
   plugins+=(zsh-bitbake)
