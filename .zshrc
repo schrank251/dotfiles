@@ -146,8 +146,8 @@ alias grok='git reset origin/$(git_current_branch) --keep'
 alias gros='git reset origin/$(git_current_branch) --soft'
 
 zstyle ':completion:*:*:git-*:*' ignored-patterns 'ORIG_HEAD' 'origin'
+zstyle ':completion:*:-command-:*:commands' ignored-patterns 'tred'
 
-command -v tred > /dev/null 2>&1 && alias tre='tree'
 dpkg-tree() {
   dpkg -c "$1" | awk '{print $6}' | tree --fromfile
 }
